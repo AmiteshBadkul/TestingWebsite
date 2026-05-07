@@ -168,6 +168,29 @@
               </ul>
             </article>
           </div>
+
+          <div class="stakeholder-map" aria-label="Detailed stakeholder map">
+            <article>
+              <span class="card-label">Business owners</span>
+              <h3>What they needed</h3>
+              <p>Higher adoption, fewer incomplete setups, and confidence that required ERP data was still captured.</p>
+            </article>
+            <article>
+              <span class="card-label">Engineering</span>
+              <h3>What they needed</h3>
+              <p>Clear field dependencies, validation rules, component states, and realistic implementation scope.</p>
+            </article>
+            <article>
+              <span class="card-label">Support teams</span>
+              <h3>What they needed</h3>
+              <p>Fewer repetitive questions caused by unclear setup steps, vague errors, and confusing case status.</p>
+            </article>
+            <article>
+              <span class="card-label">End users</span>
+              <h3>What they needed</h3>
+              <p>Plain-language guidance, visible progress, accessible controls, and predictable recovery paths.</p>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -213,6 +236,35 @@
             </article>
           </div>
 
+          <div class="journey-section" aria-label="ERP before and after user journey maps">
+            <div class="artifact-title">
+              <p class="eyebrow">Journey map</p>
+              <h3>Before and after: the onboarding journey became more guided and recoverable.</h3>
+            </div>
+            <div class="journey-grid">
+              <article>
+                <span class="card-label">Before journey</span>
+                <div class="journey-track">
+                  <div class="journey-step pain"><strong>Account</strong><span>Starts setup</span></div>
+                  <div class="journey-step pain"><strong>Role</strong><span>Terminology unclear</span></div>
+                  <div class="journey-step pain"><strong>Data</strong><span>Too many fields at once</span></div>
+                  <div class="journey-step blocked"><strong>Error</strong><span>Late validation</span></div>
+                  <div class="journey-step blocked"><strong>Exit</strong><span>Abandons setup</span></div>
+                </div>
+              </article>
+              <article>
+                <span class="card-label">After journey</span>
+                <div class="journey-track">
+                  <div class="journey-step good"><strong>Account</strong><span>Clear next step</span></div>
+                  <div class="journey-step good"><strong>Role</strong><span>Role-based path</span></div>
+                  <div class="journey-step good"><strong>Data</strong><span>Grouped requirements</span></div>
+                  <div class="journey-step good"><strong>Review</strong><span>Fix before submit</span></div>
+                  <div class="journey-step good"><strong>Ready</strong><span>Reaches dashboard</span></div>
+                </div>
+              </article>
+            </div>
+          </div>
+
           <div class="iteration-lab">
             <div class="lab-copy">
               <p class="eyebrow">Iterations and brainstorming</p>
@@ -240,6 +292,74 @@
                 <p>Balanced progress, validation, and enterprise confidence.</p>
               </article>
             </div>
+          </div>
+
+          <div class="concept-board" aria-label="ERP visual brainstorming concepts">
+            <article class="concept-card">
+              <span class="card-label">Discarded concept A</span>
+              <div class="wireframe dense-wireframe" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <h3>Single-page setup</h3>
+              <p><strong>Why it was discarded:</strong> it looked efficient, but compressed too many ERP decisions into one page and increased cognitive load for new users.</p>
+            </article>
+            <article class="concept-card">
+              <span class="card-label">Discarded concept B</span>
+              <div class="wireframe wizard-wireframe" aria-hidden="true">
+                <i></i><i></i><i></i><b></b><b></b>
+              </div>
+              <h3>Linear wizard only</h3>
+              <p><strong>Why it was discarded:</strong> it made progress visible, but users could not easily understand what was missing before submission.</p>
+            </article>
+            <article class="concept-card selected-concept">
+              <span class="card-label">Chosen direction</span>
+              <div class="wireframe chosen-wireframe" aria-hidden="true">
+                <i></i><i></i><i></i><b></b><b></b><b></b>
+              </div>
+              <h3>Guided setup + review</h3>
+              <p><strong>Why it won:</strong> it preserved required business logic while adding progress, inline validation, and a review checkpoint.</p>
+            </article>
+          </div>
+
+          <div class="decision-matrix" aria-label="ERP design decision matrix">
+            <div class="artifact-title">
+              <p class="eyebrow">Decision rationale</p>
+              <h3>Final direction was chosen by balancing user clarity, business requirements, and build feasibility.</h3>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Concept</th>
+                  <th scope="col">User clarity</th>
+                  <th scope="col">Business fit</th>
+                  <th scope="col">Feasibility</th>
+                  <th scope="col">Decision</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Single-page setup</td>
+                  <td>Low</td>
+                  <td>High</td>
+                  <td>High</td>
+                  <td>Discarded</td>
+                </tr>
+                <tr>
+                  <td>Wizard only</td>
+                  <td>Medium</td>
+                  <td>Medium</td>
+                  <td>Medium</td>
+                  <td>Iterated</td>
+                </tr>
+                <tr>
+                  <td>Guided setup + review</td>
+                  <td>High</td>
+                  <td>High</td>
+                  <td>Medium</td>
+                  <td>Selected</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
           <div class="screen-row" aria-label="ERP recreated screen set">
@@ -380,6 +500,35 @@
             </article>
           </div>
 
+          <div class="journey-section" aria-label="Service portal before and after journey maps">
+            <div class="artifact-title">
+              <p class="eyebrow">Journey map</p>
+              <h3>Before and after: the portal journey became more accessible from navigation to resolution.</h3>
+            </div>
+            <div class="journey-grid">
+              <article>
+                <span class="card-label">Before journey</span>
+                <div class="journey-track">
+                  <div class="journey-step pain"><strong>Find</strong><span>Navigation labels vague</span></div>
+                  <div class="journey-step blocked"><strong>Focus</strong><span>Keyboard focus lost</span></div>
+                  <div class="journey-step pain"><strong>Form</strong><span>Errors unclear</span></div>
+                  <div class="journey-step pain"><strong>Status</strong><span>Color-dependent</span></div>
+                  <div class="journey-step blocked"><strong>Support</strong><span>Needs help</span></div>
+                </div>
+              </article>
+              <article>
+                <span class="card-label">After journey</span>
+                <div class="journey-track">
+                  <div class="journey-step good"><strong>Find</strong><span>Clear nav labels</span></div>
+                  <div class="journey-step good"><strong>Focus</strong><span>Visible tab order</span></div>
+                  <div class="journey-step good"><strong>Form</strong><span>Specific errors</span></div>
+                  <div class="journey-step good"><strong>Status</strong><span>Text + color</span></div>
+                  <div class="journey-step good"><strong>Resolve</strong><span>Completes task</span></div>
+                </div>
+              </article>
+            </div>
+          </div>
+
           <div class="iteration-lab portal-lab">
             <div class="lab-copy">
               <p class="eyebrow">Iterations and brainstorming</p>
@@ -407,6 +556,74 @@
                 <p>Combined navigation, forms, focus, errors, and case status patterns.</p>
               </article>
             </div>
+          </div>
+
+          <div class="concept-board" aria-label="Accessibility visual brainstorming concepts">
+            <article class="concept-card">
+              <span class="card-label">Discarded concept A</span>
+              <div class="wireframe contrast-wireframe" aria-hidden="true">
+                <span></span><span></span><span></span><b></b>
+              </div>
+              <h3>Contrast-only refresh</h3>
+              <p><strong>Why it was discarded:</strong> it improved surface readability but did not solve keyboard navigation, form recovery, or status clarity.</p>
+            </article>
+            <article class="concept-card">
+              <span class="card-label">Discarded concept B</span>
+              <div class="wireframe form-wireframe" aria-hidden="true">
+                <i></i><i></i><i></i><em></em>
+              </div>
+              <h3>Form-only accessibility</h3>
+              <p><strong>Why it was discarded:</strong> it helped request creation but ignored discovery, case tracking, notifications, and support follow-up.</p>
+            </article>
+            <article class="concept-card selected-concept blue-selected">
+              <span class="card-label">Chosen direction</span>
+              <div class="wireframe service-wireframe" aria-hidden="true">
+                <i></i><span></span><span></span><b></b><em></em>
+              </div>
+              <h3>Accessible service flow</h3>
+              <p><strong>Why it won:</strong> it mapped WCAG improvements to the full task journey: nav, focus, forms, status, and recovery.</p>
+            </article>
+          </div>
+
+          <div class="decision-matrix" aria-label="Accessibility design decision matrix">
+            <div class="artifact-title">
+              <p class="eyebrow">Decision rationale</p>
+              <h3>The selected approach solved task barriers, not only visual accessibility issues.</h3>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Concept</th>
+                  <th scope="col">WCAG coverage</th>
+                  <th scope="col">Task support</th>
+                  <th scope="col">Scalability</th>
+                  <th scope="col">Decision</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Contrast-only refresh</td>
+                  <td>Low</td>
+                  <td>Low</td>
+                  <td>Medium</td>
+                  <td>Discarded</td>
+                </tr>
+                <tr>
+                  <td>Form-only accessibility</td>
+                  <td>Medium</td>
+                  <td>Medium</td>
+                  <td>Medium</td>
+                  <td>Iterated</td>
+                </tr>
+                <tr>
+                  <td>Accessible service flow</td>
+                  <td>High</td>
+                  <td>High</td>
+                  <td>High</td>
+                  <td>Selected</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
           <div class="screen-row" aria-label="Service portal recreated screens">
