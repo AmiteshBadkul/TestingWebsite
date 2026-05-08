@@ -74,6 +74,56 @@
         </div>
       </section>
 
+      <section class="impact-hero" aria-label="Impact overview">
+        <div class="section-inner">
+          <p class="impact-kicker">Impact overview</p>
+          <h2>Improving enterprise usability through structured research, iteration, and accessibility-first design.</h2>
+          <div class="impact-number-row">
+            <article>
+              <strong>30%</strong>
+              <span>lower ERP onboarding abandonment</span>
+            </article>
+            <article>
+              <strong>20%</strong>
+              <span>higher customer portal engagement</span>
+            </article>
+            <article>
+              <strong>2</strong>
+              <span>work-in-progress enterprise UX initiatives</span>
+            </article>
+            <article>
+              <strong>5+</strong>
+              <span>stakeholder groups aligned</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-specs-section" aria-label="Project specs">
+        <div class="section-inner project-specs-grid">
+          <article class="spec-card dark-spec">
+            <p class="eyebrow">UX | Enterprise systems</p>
+            <h2>ERP Onboarding Redesign</h2>
+            <p>Improving first-time setup for an internal ERP-related workflow.</p>
+            <dl>
+              <div><dt>Team overview</dt><dd>Product, engineering, operations, support, client admins</dd></div>
+              <div><dt>My role</dt><dd>Journey mapping, information architecture, wireframing, prototyping, visual design</dd></div>
+              <div><dt>Tools</dt><dd>Figma, journey maps, stakeholder reviews, usability notes</dd></div>
+            </dl>
+          </article>
+          <article class="spec-card light-spec">
+            <p class="eyebrow">UX | Accessibility</p>
+            <h2>Accessible Service Portal</h2>
+            <p>Improving WCAG 2.1 AA alignment across service request and case-status workflows.</p>
+            <dl>
+              <div><dt>Team overview</dt><dd>Product, engineering, support, accessibility reviewers, customer users</dd></div>
+              <div><dt>My role</dt><dd>Accessibility audit, interaction states, form UX, keyboard flow, component specs</dd></div>
+              <div><dt>Tools</dt><dd>Figma, contrast checks, WCAG checklist, keyboard testing, design review</dd></div>
+            </dl>
+          </article>
+        </div>
+      </section>
+
       <section class="context-section">
         <div class="section-inner context-grid">
           <div>
@@ -212,6 +262,12 @@
               <strong>30%</strong>
               <p>lower abandonment after redesigning key onboarding steps</p>
             </aside>
+          </div>
+
+          <div class="project-data-strip" aria-label="ERP project data">
+            <article><strong>4</strong><span>core onboarding steps restructured</span></article>
+            <article><strong>3</strong><span>role paths considered</span></article>
+            <article><strong>5+</strong><span>key friction points removed</span></article>
           </div>
 
           <div class="deep-grid">
@@ -402,6 +458,38 @@
             </article>
           </div>
 
+          <div class="interaction-gallery" aria-label="ERP interaction and impact screens">
+            <article class="interaction-screen">
+              <span class="card-label">Interaction change</span>
+              <h3>Inline validation moved recovery earlier.</h3>
+              <div class="state-demo">
+                <label>
+                  Tax region
+                  <input value="Northeast" aria-label="Tax region" />
+                </label>
+                <p class="success-note">This region matches the selected business unit.</p>
+              </div>
+            </article>
+            <article class="interaction-screen">
+              <span class="card-label">Impact screen</span>
+              <h3>Progress visibility reduced uncertainty.</h3>
+              <div class="progress-demo" aria-label="ERP progress demo">
+                <strong>72%</strong>
+                <span>setup complete</span>
+                <div><i style="--w: 72%"></i></div>
+              </div>
+            </article>
+            <article class="interaction-screen">
+              <span class="card-label">Review moment</span>
+              <h3>Users could confirm before submitting.</h3>
+              <div class="review-list">
+                <span>Role: Finance Admin</span>
+                <span>Profile: Complete</span>
+                <span>Permissions: Needs approval</span>
+              </div>
+            </article>
+          </div>
+
           <div class="before-after">
             <article>
               <span class="card-label">Before</span>
@@ -420,6 +508,19 @@
                 <li>Inline validation and clearer error recovery.</li>
                 <li>Review step before committing setup details.</li>
               </ul>
+            </article>
+          </div>
+
+          <div class="project-reflection">
+            <article>
+              <span class="card-label">ERP reflection</span>
+              <h3>What I learned</h3>
+              <p>Enterprise onboarding could not be simplified by removing required logic. The stronger move was sequencing decisions, explaining terms earlier, and giving users a review checkpoint before commitment.</p>
+            </article>
+            <article>
+              <span class="card-label">ERP next steps</span>
+              <h3>Where I would improve next</h3>
+              <p>Expand usability testing by role, validate save-and-resume behavior, and measure whether clearer setup requirements reduce support tickets after launch.</p>
             </article>
           </div>
         </div>
@@ -441,6 +542,12 @@
               <strong>20%</strong>
               <p>higher engagement after accessibility and usability improvements</p>
             </aside>
+          </div>
+
+          <div class="project-data-strip blue-strip" aria-label="Accessibility project data">
+            <article><strong>4</strong><span>WCAG principle areas mapped</span></article>
+            <article><strong>8</strong><span>accessibility checks prioritized</span></article>
+            <article><strong>5+</strong><span>interaction states specified</span></article>
           </div>
 
           <div class="wcag-map" aria-label="WCAG 2.1 AA mapping">
@@ -665,6 +772,36 @@
             </article>
           </div>
 
+          <div class="interaction-gallery" aria-label="Accessibility interaction and impact screens">
+            <article class="interaction-screen">
+              <span class="card-label">Keyboard interaction</span>
+              <h3>Visible focus made navigation trackable.</h3>
+              <div class="focus-path">
+                <button type="button">1. New request</button>
+                <button type="button" class="focus-button">2. Case card</button>
+                <button type="button">3. Contact support</button>
+              </div>
+            </article>
+            <article class="interaction-screen">
+              <span class="card-label">Assistive clarity</span>
+              <h3>Status no longer relied on color alone.</h3>
+              <div class="ticket-card">
+                <span class="status-chip blue">Review needed</span>
+                <strong>Access request pending</strong>
+                <p>Engineering review required before this request can move forward.</p>
+              </div>
+            </article>
+            <article class="interaction-screen">
+              <span class="card-label">Impact screen</span>
+              <h3>Engagement improved after reducing form friction.</h3>
+              <div class="progress-demo blue-progress" aria-label="Portal engagement demo">
+                <strong>20%</strong>
+                <span>engagement increase</span>
+                <div><i style="--w: 80%"></i></div>
+              </div>
+            </article>
+          </div>
+
           <div class="accessibility-visuals">
             <article class="contrast-card">
               <span class="card-label">Contrast annotation</span>
@@ -686,6 +823,19 @@
                 <button type="button" class="focus-button">Keyboard focus</button>
                 <button type="button" class="disabled-button" disabled>Disabled</button>
               </div>
+            </article>
+          </div>
+
+          <div class="project-reflection">
+            <article>
+              <span class="card-label">Accessibility reflection</span>
+              <h3>What I learned</h3>
+              <p>Accessibility had the most impact when it was treated as a full journey issue. Contrast mattered, but keyboard order, errors, status language, and semantic structure mattered just as much.</p>
+            </article>
+            <article>
+              <span class="card-label">Accessibility next steps</span>
+              <h3>Where I would improve next</h3>
+              <p>Run screen-reader walkthroughs with representative users, document component-level accessibility rules, and continue tracking engagement by task type.</p>
             </article>
           </div>
         </div>

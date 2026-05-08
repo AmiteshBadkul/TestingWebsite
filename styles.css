@@ -296,6 +296,116 @@ button {
   background: var(--surface);
 }
 
+.impact-hero {
+  padding: 58px 0 70px;
+  background: var(--surface);
+  text-align: center;
+}
+
+.impact-kicker {
+  display: inline-flex;
+  margin: 0 0 18px;
+  padding: 4px 10px;
+  background: #dfe8ff;
+  color: #1f3f91;
+  font-weight: 780;
+}
+
+.impact-hero h2 {
+  width: min(940px, 100%);
+  margin: 0 auto;
+  font-size: clamp(2rem, 4vw, 3.55rem);
+}
+
+.impact-number-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 36px;
+}
+
+.impact-number-row article {
+  display: grid;
+  gap: 8px;
+  align-content: center;
+  min-height: 132px;
+}
+
+.impact-number-row strong {
+  color: #4f75dc;
+  font-size: clamp(2.7rem, 5vw, 4.6rem);
+  line-height: 0.95;
+}
+
+.impact-number-row span {
+  color: #4f75dc;
+  font-size: 1.04rem;
+  font-weight: 760;
+}
+
+.project-specs-section {
+  padding: 0 0 76px;
+  background: var(--surface);
+}
+
+.project-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.spec-card {
+  min-height: 430px;
+  padding: 34px;
+  border-radius: var(--radius);
+}
+
+.dark-spec {
+  background: #050608;
+  color: var(--surface);
+}
+
+.light-spec {
+  border: 1px solid var(--line);
+  background: #f8fafc;
+}
+
+.spec-card h2 {
+  margin-bottom: 12px;
+}
+
+.spec-card p {
+  color: var(--muted);
+}
+
+.dark-spec p,
+.dark-spec dd {
+  color: #d7dde7;
+}
+
+.spec-card dl {
+  display: grid;
+  gap: 18px;
+  margin: 34px 0 0;
+}
+
+.spec-card dt {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.dark-spec dt {
+  color: #94a3b8;
+}
+
+.spec-card dd {
+  margin: 0;
+  font-weight: 730;
+}
+
 .body-stack p:first-child {
   margin-top: 0;
 }
@@ -465,6 +575,39 @@ button {
   align-items: stretch;
 }
 
+.project-data-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 0 0 26px;
+  padding: 34px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.project-data-strip article {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.project-data-strip strong {
+  font-size: clamp(2.7rem, 5vw, 4.4rem);
+  line-height: 1;
+}
+
+.project-data-strip span {
+  max-width: 190px;
+  color: var(--muted);
+  font-size: 1.02rem;
+  font-weight: 780;
+  text-transform: uppercase;
+}
+
+.blue-strip strong {
+  color: var(--blue);
+}
+
 .impact-card {
   display: grid;
   align-content: center;
@@ -497,6 +640,104 @@ button {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
   margin-top: 22px;
+}
+
+.interaction-gallery,
+.project-reflection {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.project-reflection {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.interaction-screen,
+.project-reflection article {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.interaction-screen h3,
+.project-reflection h3 {
+  margin-bottom: 14px;
+}
+
+.interaction-screen p,
+.project-reflection p {
+  color: var(--muted);
+}
+
+.state-demo {
+  padding: 16px;
+  border-radius: var(--radius);
+  background: #f8fafc;
+}
+
+.progress-demo {
+  display: grid;
+  gap: 8px;
+  padding: 18px;
+  border-radius: var(--radius);
+  background: rgba(8, 127, 122, 0.1);
+}
+
+.progress-demo strong {
+  color: var(--teal);
+  font-size: 3.4rem;
+  line-height: 1;
+}
+
+.progress-demo span {
+  color: var(--teal-dark);
+  font-weight: 850;
+}
+
+.progress-demo div {
+  overflow: hidden;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(8, 127, 122, 0.18);
+}
+
+.progress-demo i {
+  display: block;
+  width: var(--w);
+  height: 100%;
+  border-radius: 999px;
+  background: var(--teal);
+}
+
+.blue-progress {
+  background: rgba(37, 99, 235, 0.1);
+}
+
+.blue-progress strong,
+.blue-progress span {
+  color: var(--blue);
+}
+
+.blue-progress div {
+  background: rgba(37, 99, 235, 0.18);
+}
+
+.blue-progress i {
+  background: var(--blue);
+}
+
+.focus-path {
+  display: grid;
+  gap: 10px;
+}
+
+.focus-path button {
+  justify-content: flex-start;
+  background: #e7edf8;
+  color: #1e3a8a;
 }
 
 .journey-section,
@@ -2407,7 +2648,10 @@ th {
   .screen-row,
   .stakeholder-map,
   .concept-board,
-  .journey-track {
+  .journey-track,
+  .impact-number-row,
+  .project-specs-grid,
+  .interaction-gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -2503,6 +2747,9 @@ th {
   }
 
   .snapshot-grid,
+  .impact-number-row,
+  .project-specs-grid,
+  .project-data-strip,
   .process-timeline,
   .stakeholder-board,
   .stakeholder-map,
@@ -2515,8 +2762,14 @@ th {
   .journey-track,
   .wcag-map,
   .accessibility-visuals,
+  .interaction-gallery,
+  .project-reflection,
   .component-board {
     grid-template-columns: 1fr;
+  }
+
+  .project-data-strip article {
+    align-items: flex-start;
   }
 
   .journey-step::after {
