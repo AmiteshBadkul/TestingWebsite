@@ -68,56 +68,9 @@ textarea:focus-visible {
   transform: translateY(0);
 }
 
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  border-bottom: 1px solid rgba(217, 222, 231, 0.78);
-  background: rgba(247, 248, 250, 0.94);
-  backdrop-filter: blur(16px);
-}
-
-.section-inner,
-.nav-shell {
+.section-inner {
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
-}
-
-.nav-shell {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 70px;
-  gap: 24px;
-}
-
-.brand-mark {
-  display: inline-grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  border-radius: var(--radius);
-  background: var(--ink);
-  color: var(--surface);
-  font-weight: 850;
-  text-decoration: none;
-}
-
-.nav-links {
-  display: flex;
-  gap: 22px;
-  color: var(--muted);
-  font-size: 0.9rem;
-  font-weight: 750;
-}
-
-.nav-links a,
-.hero-actions a {
-  text-decoration: none;
-}
-
-.nav-links a:hover {
-  color: var(--teal);
 }
 
 section {
@@ -127,8 +80,8 @@ section {
 .hero-section {
   position: relative;
   overflow: hidden;
-  min-height: 760px;
-  padding: 86px 0 0;
+  min-height: 680px;
+  padding: 82px 0;
   background: #000000;
   color: #f8fafc;
 }
@@ -145,10 +98,10 @@ section {
 
 .dark-hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
-  gap: 70px;
+  grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
+  gap: 64px;
   align-items: center;
-  min-height: 600px;
+  min-height: 520px;
 }
 
 .hero-tags {
@@ -174,11 +127,11 @@ section {
 }
 
 .dark-hero-copy h1 {
-  max-width: 880px;
+  max-width: 650px;
   color: #f1f5f9;
-  font-size: clamp(3.5rem, 7.7vw, 7.4rem);
-  line-height: 0.9;
-  font-weight: 900;
+  font-size: clamp(3.1rem, 5.2vw, 5.35rem);
+  line-height: 0.96;
+  font-weight: 850;
 }
 
 .hero-duration {
@@ -214,7 +167,7 @@ section {
 
 .dark-hero-visual {
   position: relative;
-  min-height: 430px;
+  min-height: 410px;
 }
 
 .dark-hero-visual > p {
@@ -223,99 +176,137 @@ section {
   font-size: 1.05rem;
 }
 
-.hero-card-stack {
-  position: relative;
-  min-height: 260px;
-  filter: grayscale(1);
-  opacity: 0.88;
+.hero-dashboard-frame {
+  overflow: hidden;
+  border: 1px solid #30333a;
+  border-radius: 16px;
+  background: #f4f7fb;
+  box-shadow: 0 26px 90px rgba(0, 0, 0, 0.58);
+  filter: grayscale(0.22) saturate(0.88);
+  opacity: 0.94;
 }
 
-.hero-ui-card {
-  position: absolute;
-  display: grid;
-  align-content: end;
-  gap: 14px;
-  width: min(360px, 82%);
-  min-height: 210px;
-  padding: 22px;
-  border: 1px solid #34363a;
-  border-radius: 12px;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.18), transparent 52%),
-    #1f2228;
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
+.hero-dashboard-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 54px;
+  padding: 0 18px;
+  background: #ffffff;
+  color: #202733;
 }
 
-.hero-ui-card span {
-  color: #cbd5e1;
+.hero-dashboard-top span {
+  margin-right: auto;
   font-weight: 850;
-  text-transform: uppercase;
 }
 
-.hero-ui-card strong {
+.hero-dashboard-top i {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #d8e2ef;
+}
+
+.hero-dashboard-body {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  min-height: 330px;
+}
+
+.hero-dashboard-body aside {
+  display: grid;
+  align-content: start;
+  gap: 18px;
+  padding: 26px 20px;
+  background: #1f252d;
   color: #f8fafc;
-  font-size: 4rem;
-  line-height: 1;
 }
 
-.hero-ui-card i {
-  display: block;
-  height: 12px;
+.hero-dashboard-body aside span {
+  width: 78%;
+  height: 10px;
   border-radius: 999px;
-  background: #a3a6ad;
+  background: rgba(255, 255, 255, 0.22);
 }
 
-.back-card {
-  left: 0;
-  top: 72px;
+.hero-dashboard-body aside span:first-child {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #475569;
 }
 
-.front-card {
-  right: 0;
-  top: 16px;
-  min-height: 230px;
+.hero-dashboard-body aside strong {
+  font-size: 0.92rem;
 }
 
-.hero-impact-overlay {
-  position: absolute;
-  left: 0;
-  bottom: 28px;
-  color: rgba(248, 250, 252, 0.55);
+.hero-dashboard-main {
+  display: grid;
+  gap: 18px;
+  padding: 26px;
 }
 
-.hero-impact-overlay strong {
+.hero-metric-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.hero-metric-row article,
+.hero-chart-card {
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.hero-metric-row article {
+  padding: 18px;
+  border-left: 3px solid #2b7cff;
+}
+
+.hero-metric-row span,
+.hero-chart-card span {
   display: block;
-  font-size: 4.2rem;
-  line-height: 0.92;
-}
-
-.hero-impact-overlay span,
-.hero-demo-count span {
-  color: #8c8f96;
+  color: #8aa0b4;
+  font-size: 0.82rem;
   font-weight: 760;
 }
 
-.hero-demo-count {
-  position: absolute;
-  right: 0;
-  bottom: 38px;
+.hero-metric-row strong {
+  display: block;
+  color: #41576a;
+  font-size: 1.3rem;
+}
+
+.hero-chart-card {
+  padding: 20px;
+}
+
+.hero-chart-card div {
   display: flex;
   align-items: baseline;
-  gap: 12px;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
 }
 
-.hero-demo-count strong {
-  color: rgba(248, 250, 252, 0.82);
-  font-size: 2.2rem;
+.hero-chart-card strong {
+  color: #2167d2;
+  font-size: 1.35rem;
 }
 
-.hero-nda-strip {
+.hero-chart-card svg {
+  display: block;
   width: 100%;
-  margin-top: 34px;
-  padding: 18px max(20px, calc((100vw - 1180px) / 2));
-  background: #1c1d20;
-  color: #f1f5f9;
-  font-size: 1.08rem;
+  height: auto;
+}
+
+.hero-chart-card polyline {
+  fill: none;
+  stroke: #4c8cf0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 7;
 }
 
 .eyebrow,
@@ -2947,22 +2938,8 @@ th {
 }
 
 @media (max-width: 720px) {
-  .section-inner,
-  .nav-shell {
+  .section-inner {
     width: min(100% - 28px, 1180px);
-  }
-
-  .nav-shell {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 14px 0;
-  }
-
-  .nav-links {
-    width: 100%;
-    gap: 16px;
-    overflow-x: auto;
-    white-space: nowrap;
   }
 
   section,
@@ -2982,10 +2959,6 @@ th {
 
   .dark-hero-visual {
     min-height: 520px;
-  }
-
-  .hero-nda-strip {
-    margin-top: 18px;
   }
 
   h1 {
