@@ -1163,82 +1163,45 @@ th {
   box-shadow: 0 22px 70px rgba(23, 33, 31, 0.12);
 }
 
-.gift-hero-visual {
-  position: relative;
+.gift-cover-panel {
+  display: grid;
+  align-content: end;
   min-height: 285px;
-  overflow: hidden;
-  background: #dfe7e1;
+  padding: 30px;
+  background:
+    linear-gradient(135deg, rgba(11, 127, 125, 0.88), rgba(23, 33, 31, 0.92)),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: auto, 28px 28px, 28px 28px;
+  color: #ffffff;
 }
 
-.visual-card,
-.visual-core,
-.visual-line {
-  position: absolute;
-}
-
-.visual-card {
-  display: grid;
-  place-items: center;
-  width: 128px;
-  height: 82px;
-  border: 1px solid rgba(23, 33, 31, 0.16);
-  border-radius: 8px;
-  background: #ffffff;
-  color: var(--gift-ink);
+.gift-cover-panel p {
+  margin: 0 0 10px;
+  color: #bdeee8;
+  font-size: 0.82rem;
   font-weight: 900;
-  box-shadow: 0 14px 36px rgba(23, 33, 31, 0.12);
+  text-transform: uppercase;
 }
 
-.camera-card {
-  top: 44px;
-  left: 44px;
+.gift-cover-panel strong {
+  max-width: 420px;
+  margin-bottom: 22px;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  line-height: 1.02;
 }
 
-.planner-card {
-  top: 48px;
-  right: 54px;
-}
-
-.trip-card {
-  bottom: 42px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.visual-core {
-  display: grid;
-  place-items: center;
-  inset: 50% auto auto 50%;
-  width: 150px;
-  min-height: 76px;
-  padding: 12px;
-  transform: translate(-50%, -50%);
+.gift-cover-panel span {
+  display: inline-flex;
+  width: fit-content;
+  margin: 5px 8px 0 0;
+  padding: 7px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.26);
   border-radius: 999px;
-  background: var(--gift-ink);
-  color: #fff;
-  text-align: center;
-  font-size: 0.86rem;
-  font-weight: 900;
-  z-index: 2;
-}
-
-.visual-line {
-  width: 250px;
-  height: 2px;
-  background: rgba(11, 127, 125, 0.42);
-  transform-origin: center;
-}
-
-.line-one {
-  top: 112px;
-  left: 118px;
-  transform: rotate(13deg);
-}
-
-.line-two {
-  bottom: 110px;
-  right: 118px;
-  transform: rotate(-22deg);
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 850;
 }
 
 .gift-snapshot dl {
@@ -1376,6 +1339,80 @@ th {
   color: var(--gift-muted);
 }
 
+.ppt-stakeholder-map {
+  position: relative;
+  display: grid;
+  grid-template-columns: 92px repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  min-height: 430px;
+  padding: 22px;
+  border: 1px solid var(--gift-line);
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(11, 127, 125, 0.08) 1px, transparent 1px),
+    #ffffff;
+  background-size: 80px 100%;
+}
+
+.stakeholder-axis {
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: var(--gift-teal);
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.stakeholder-person {
+  position: absolute;
+  left: 50%;
+  top: 28px;
+  transform: translateX(-50%);
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: var(--gift-ink);
+  color: #ffffff;
+  font-weight: 900;
+  z-index: 2;
+}
+
+.ppt-stakeholder-map article {
+  display: grid;
+  align-content: end;
+  min-height: 340px;
+  margin-top: 42px;
+  padding: 22px;
+  border: 1px solid var(--gift-line);
+  border-radius: 8px;
+  background: #f7fbf9;
+}
+
+.ppt-stakeholder-map h4 {
+  margin: 0 0 14px;
+  color: var(--gift-teal);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.ppt-stakeholder-map ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 20px;
+  color: var(--gift-muted);
+  font-weight: 760;
+}
+
+.highest-influence {
+  border-color: rgba(11, 127, 125, 0.48) !important;
+  box-shadow: 0 18px 46px rgba(11, 127, 125, 0.12);
+}
+
 .stakeholder-orbit {
   position: relative;
   display: grid;
@@ -1473,6 +1510,7 @@ th {
   gap: 18px;
 }
 
+.ppt-rhetoric-triangle,
 .rhetoric-triangle {
   display: grid;
   grid-template-columns: minmax(300px, 0.9fr) 1fr;
@@ -1483,6 +1521,88 @@ th {
   border: 1px solid rgba(255, 253, 248, 0.16);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.06);
+}
+
+.ppt-triangle-canvas {
+  position: relative;
+  min-height: 350px;
+}
+
+.ppt-triangle-canvas::before {
+  content: "";
+  position: absolute;
+  inset: 48px 34px 34px;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  background:
+    linear-gradient(140deg, rgba(120, 209, 200, 0.18), rgba(199, 147, 47, 0.12));
+  border: 2px solid rgba(120, 209, 200, 0.72);
+}
+
+.ppt-triangle-canvas::after {
+  content: "";
+  position: absolute;
+  inset: 78px 78px 76px;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  border: 1px dashed rgba(255, 255, 255, 0.42);
+}
+
+.ppt-tri-label,
+.ppt-tri-core {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  font-weight: 900;
+}
+
+.ppt-tri-label {
+  width: 104px;
+  min-height: 46px;
+  background: #ffffff;
+  color: var(--gift-ink);
+}
+
+.ethos-label {
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pathos-label {
+  left: 4px;
+  bottom: 4px;
+}
+
+.logos-label {
+  right: 4px;
+  bottom: 4px;
+}
+
+.ppt-tri-core {
+  inset: 50% auto auto 50%;
+  width: 148px;
+  min-height: 78px;
+  padding: 12px;
+  transform: translate(-50%, -35%);
+  background: var(--gift-teal);
+  color: #ffffff;
+  text-align: center;
+}
+
+.triangle-copy {
+  display: grid;
+  gap: 12px;
+}
+
+.triangle-copy article {
+  padding: 16px;
+  border: 1px solid rgba(255, 253, 248, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.triangle-copy h3 {
+  font-size: 1.05rem;
 }
 
 .triangle-canvas {
@@ -1748,6 +1868,271 @@ th {
 }
 
 .planner-case-grid p:last-child {
+  color: #d7e2dd;
+}
+
+.planner-prototype-frame {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  overflow: hidden;
+  border: 1px solid rgba(255, 253, 248, 0.16);
+  border-radius: 8px;
+  background: #f6f8fb;
+  color: #172033;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.22);
+}
+
+.planner-app-sidebar {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  padding: 22px;
+  background: #111827;
+  color: #ffffff;
+}
+
+.planner-app-logo {
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  color: #bdeee8;
+  font-size: 1.12rem;
+  font-weight: 900;
+}
+
+.planner-app-sidebar button {
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 42px;
+  padding: 0 12px;
+  border-radius: 8px;
+  background: transparent;
+  color: #d7e2dd;
+}
+
+.planner-app-sidebar button.active,
+.planner-app-sidebar button:hover {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.planner-app-screen {
+  min-height: 620px;
+  background: #f6f8fb;
+}
+
+.planner-app-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 24px 28px;
+  border-bottom: 1px solid #dbe3ee;
+  background: #ffffff;
+}
+
+.planner-app-topbar span,
+.planner-feature-card span,
+.template-card span,
+.planner-stat-grid span,
+.goal-board span {
+  display: block;
+  color: #2563eb;
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.planner-app-topbar strong {
+  display: block;
+  margin-top: 6px;
+  font-size: clamp(1.35rem, 2vw, 1.9rem);
+  line-height: 1.08;
+}
+
+.planner-app-topbar button,
+.print-options button {
+  min-height: 42px;
+  border-radius: 8px;
+  background: #111827;
+  color: #ffffff;
+}
+
+.planner-app-content {
+  display: grid;
+  gap: 18px;
+  padding: 24px;
+}
+
+.planner-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.planner-stat-grid article,
+.planner-feature-card,
+.template-card,
+.planner-form-screen,
+.goal-board article,
+.album-grid article,
+.print-preview,
+.print-options {
+  border: 1px solid #dbe3ee;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(17, 24, 39, 0.07);
+}
+
+.planner-stat-grid article {
+  padding: 18px;
+}
+
+.planner-stat-grid strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 2.1rem;
+}
+
+.planner-dashboard-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 14px;
+}
+
+.planner-feature-card {
+  padding: 22px;
+}
+
+.planner-feature-card.large {
+  grid-row: span 2;
+  min-height: 280px;
+}
+
+.planner-feature-card h3,
+.template-card strong,
+.goal-board span {
+  margin-top: 10px;
+}
+
+.planner-feature-card p,
+.template-card p,
+.goal-board p,
+.album-grid p {
+  color: #5b6472;
+}
+
+.app-progress {
+  overflow: hidden;
+  height: 12px;
+  margin-top: 24px;
+  border-radius: 999px;
+  background: #e2e8f0;
+}
+
+.app-progress i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #2563eb, #0b7f7d);
+}
+
+.template-grid,
+.goal-board,
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.template-card {
+  padding: 18px;
+}
+
+.template-card.selected {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.planner-form-screen,
+.print-layout {
+  display: grid;
+  gap: 14px;
+}
+
+.planner-form-screen {
+  padding: 20px;
+}
+
+.goal-board article {
+  padding: 20px;
+}
+
+.album-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.album-grid article {
+  padding: 14px;
+}
+
+.album-grid article > span {
+  display: block;
+  height: 116px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(37, 99, 235, 0.2), rgba(11, 127, 125, 0.18)),
+    #e8eef7;
+}
+
+.print-layout {
+  grid-template-columns: 1fr 0.8fr;
+}
+
+.print-preview,
+.print-options {
+  padding: 24px;
+}
+
+.print-preview {
+  min-height: 360px;
+  border: 1px dashed #2563eb;
+  background:
+    linear-gradient(90deg, rgba(37, 99, 235, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(37, 99, 235, 0.08) 1px, transparent 1px),
+    #ffffff;
+  background-size: 22px 22px;
+}
+
+.print-preview strong {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 2rem;
+}
+
+.print-preview small {
+  display: block;
+  margin-top: 130px;
+  color: #64748b;
+}
+
+.print-options {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+}
+
+.prototype-explanation {
+  margin-top: 18px;
+  padding: 20px;
+  border: 1px solid rgba(255, 253, 248, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.prototype-explanation p:last-child {
+  margin: 0;
   color: #d7e2dd;
 }
 
@@ -2037,7 +2422,9 @@ th {
   .stakeholder-rings,
   .planner-content,
   .rhetoric-triangle,
-  .detailed-planner {
+  .ppt-rhetoric-triangle,
+  .detailed-planner,
+  .planner-prototype-frame {
     grid-template-columns: 1fr;
   }
 
@@ -2045,12 +2432,41 @@ th {
   .time-horizon-grid,
   .rhetoric-grid,
   .system-map-web,
-  .planner-case-grid {
+  .planner-case-grid,
+  .planner-stat-grid,
+  .template-grid,
+  .goal-board,
+  .album-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .journey-cards {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .ppt-stakeholder-map {
+    grid-template-columns: 70px 1fr;
+  }
+
+  .ppt-stakeholder-map article {
+    min-height: auto;
+    margin-top: 0;
+  }
+
+  .stakeholder-person {
+    position: static;
+    grid-column: 2;
+    transform: none;
+    width: fit-content;
+  }
+
+  .planner-dashboard-grid,
+  .print-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .planner-feature-card.large {
+    min-height: auto;
   }
 }
 
@@ -2150,59 +2566,61 @@ th {
   .time-horizon-grid,
   .rhetoric-grid,
   .rhetoric-triangle,
+  .ppt-rhetoric-triangle,
   .journey-cards,
   .system-map-web,
   .outcome-cards,
   .planner-case-grid,
   .detailed-planner,
-  .planner-content {
+  .planner-content,
+  .planner-prototype-frame,
+  .planner-stat-grid,
+  .template-grid,
+  .goal-board,
+  .album-grid,
+  .ppt-stakeholder-map {
     grid-template-columns: 1fr;
   }
 
-  .gift-hero-visual {
+  .gift-cover-panel {
     min-height: 240px;
-  }
-
-  .visual-card {
-    width: 108px;
-    height: 68px;
-    font-size: 0.82rem;
-  }
-
-  .camera-card {
-    left: 18px;
-  }
-
-  .planner-card {
-    right: 18px;
-  }
-
-  .visual-core {
-    width: 126px;
-    font-size: 0.76rem;
-  }
-
-  .stakeholder-orbit {
-    position: static;
-    min-height: auto;
-    gap: 12px;
-    padding: 14px;
-    background: #ffffff;
-  }
-
-  .orbit-center,
-  .orbit-node {
-    position: static;
-    width: auto;
-    transform: none;
   }
 
   .triangle-canvas {
     min-height: 260px;
   }
 
+  .ppt-triangle-canvas {
+    min-height: 290px;
+  }
+
   .tri-point {
     width: 82px;
+  }
+
+  .ppt-tri-label {
+    width: 82px;
+    font-size: 0.8rem;
+  }
+
+  .ppt-tri-core {
+    width: 124px;
+    min-height: 64px;
+    font-size: 0.78rem;
+  }
+
+  .stakeholder-axis {
+    min-height: 50px;
+    writing-mode: horizontal-tb;
+    transform: none;
+  }
+
+  .stakeholder-person {
+    grid-column: auto;
+  }
+
+  .planner-app-sidebar {
+    grid-template-columns: 1fr;
   }
 
   .planner-sidebar nav {

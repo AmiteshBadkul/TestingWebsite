@@ -27,13 +27,12 @@
           </div>
 
           <aside class="gift-snapshot" aria-label="Project snapshot">
-            <div class="gift-hero-visual" aria-hidden="true">
-              <span class="visual-card camera-card">Camera</span>
-              <span class="visual-card planner-card">Planner</span>
-              <span class="visual-card trip-card">Trip</span>
-              <span class="visual-line line-one"></span>
-              <span class="visual-line line-two"></span>
-              <span class="visual-core">Meaningful gift system</span>
+            <div class="gift-cover-panel" aria-label="Case study cover summary">
+              <p>Gift for Dad</p>
+              <strong>Research-led personal gifting experience</strong>
+              <span>Past nostalgia</span>
+              <span>Present care</span>
+              <span>Future goals</span>
             </div>
             <dl>
               <div>
@@ -136,27 +135,37 @@
                 the highest-opportunity design space was the family system.
               </p>
             </div>
-            <div class="stakeholder-orbit" aria-label="Stakeholder groups by influence">
-              <div class="orbit-center">
-                <span>Recipient</span>
-                <small>High emotional need</small>
+            <div class="ppt-stakeholder-map" aria-label="Stakeholder map recreated from PPT">
+              <div class="stakeholder-axis">
+                <span>Degree of interaction and influence</span>
               </div>
-              <div class="orbit-node family-node">
-                <strong>Family</strong>
-                <span>Spouse, daughter, close relatives</span>
-              </div>
-              <div class="orbit-node friend-node">
-                <strong>Friends</strong>
-                <span>Childhood friends, close peers</span>
-              </div>
-              <div class="orbit-node work-node">
-                <strong>Work circle</strong>
-                <span>Managers, coworkers, daily contacts</span>
-              </div>
-              <div class="orbit-node community-node">
-                <strong>Acquaintances</strong>
-                <span>Commute partners, neighbors, service contacts</span>
-              </div>
+              <div class="stakeholder-person">Recipient</div>
+              <article>
+                <h4>Acquaintances</h4>
+                <ul>
+                  <li>Security guards</li>
+                  <li>Passengers</li>
+                  <li>Commute partners</li>
+                </ul>
+              </article>
+              <article>
+                <h4>Friends</h4>
+                <ul>
+                  <li>Friends</li>
+                  <li>Co-workers</li>
+                  <li>Childhood friends</li>
+                </ul>
+              </article>
+              <article class="highest-influence">
+                <h4>Family</h4>
+                <ul>
+                  <li>Spouse</li>
+                  <li>Daughter</li>
+                  <li>In-laws</li>
+                  <li>Siblings</li>
+                  <li>Relatives</li>
+                </ul>
+              </article>
             </div>
           </div>
         </div>
@@ -174,20 +183,26 @@
             </p>
           </div>
 
-          <div class="rhetoric-triangle" aria-label="Ethos logos pathos triangle">
-            <div class="triangle-canvas" aria-hidden="true">
-              <span class="tri-point tri-ethos">Ethos</span>
-              <span class="tri-point tri-pathos">Pathos</span>
-              <span class="tri-point tri-logos">Logos</span>
-              <span class="tri-center">Gift strategy</span>
+          <div class="ppt-rhetoric-triangle" aria-label="Rhetorical triangle recreated from PPT">
+            <div class="ppt-triangle-canvas" aria-hidden="true">
+              <span class="ppt-tri-label ethos-label">Ethos</span>
+              <span class="ppt-tri-label pathos-label">Pathos</span>
+              <span class="ppt-tri-label logos-label">Logos</span>
+              <span class="ppt-tri-core">Rhetorical Triangle</span>
             </div>
             <div class="triangle-copy">
-              <h3>The triangle translated a personal idea into a design argument.</h3>
-              <p>
-                The final direction needed to feel emotionally right for the recipient, credible
-                from me as the giver-designer, and logically structured enough to support a
-                long-term behavior change.
-              </p>
+              <article>
+                <h3>Ethos: Myself as the giver-designer</h3>
+                <p>Daughter of the recipient who wanted to do something meaningful for him.</p>
+              </article>
+              <article>
+                <h3>Pathos: The recipient</h3>
+                <p>A family-centered person who does not focus on himself much.</p>
+              </article>
+              <article>
+                <h3>Logos: The gift</h3>
+                <p>A combination of gifts that relate to the recipient's past, present, and future.</p>
+              </article>
             </div>
           </div>
 
@@ -367,73 +382,55 @@
             </article>
           </div>
 
-          <div class="planner-shell detailed-planner" aria-label="Interactive Crazy Planner prototype">
-            <aside class="planner-sidebar">
-              <div class="planner-logo">TCP</div>
-              <nav aria-label="Planner prototype sections">
-                <span class="active">Dashboard</span>
-                <span>Family goals</span>
-                <span>Memory album</span>
-                <span>Print center</span>
-              </nav>
+          <div class="planner-prototype-frame" aria-label="Interactive Crazy Planner prototype">
+            <aside class="planner-app-sidebar">
+              <div class="planner-app-logo">The Crazy Planner</div>
+              <button type="button" class="active" data-screen="dashboard">Dashboard</button>
+              <button type="button" data-screen="planner">Planner</button>
+              <button type="button" data-screen="goals">Family goals</button>
+              <button type="button" data-screen="album">Memory album</button>
+              <button type="button" data-screen="print">Print center</button>
             </aside>
 
-            <div class="planner-workspace">
-              <div class="planner-topbar">
+            <div class="planner-app-screen">
+              <div class="planner-app-topbar">
                 <div>
-                  <span>The Crazy Planner</span>
-                  <strong>Plan, document, and celebrate family goals.</strong>
+                  <span id="screen-kicker">Dashboard</span>
+                  <strong id="screen-title">Good evening, ready to review today's goals?</strong>
                 </div>
-                <button type="button" class="planner-print">Print plan</button>
+                <button type="button">Projector mode</button>
               </div>
-
-              <div class="planner-tabs" role="tablist" aria-label="Planner views">
-                <button type="button" class="active" data-plan="daily" role="tab" aria-selected="true">Daily</button>
-                <button type="button" data-plan="monthly" role="tab" aria-selected="false">Monthly</button>
-                <button type="button" data-plan="yearly" role="tab" aria-selected="false">Yearly</button>
-              </div>
-
-              <div class="planner-content" data-view="daily">
-                <div class="planner-main">
-                  <p class="gift-label">Today</p>
-                  <h3>Make time for photography</h3>
-                  <label>
-                    Priority
-                    <input value="30 min photo walk" />
-                  </label>
-                  <label>
-                    Family note
-                    <textarea>Upload one photo from today and tell us why you liked it.</textarea>
-                  </label>
-                  <div class="planner-checklist" aria-label="Daily checklist">
-                    <span class="checked">Charge camera</span>
-                    <span class="checked">Pick walking route</span>
-                    <span>Print evening reflection</span>
-                  </div>
-                </div>
-                <aside class="planner-side">
-                  <p class="gift-label">Goal progress</p>
-                  <div class="progress-track"><span style="width: 64%"></span></div>
-                  <strong>64% toward this month's family goals</strong>
-                  <ul>
-                    <li>Camera practice</li>
-                    <li>Health check-in</li>
-                    <li>Trip memory album</li>
-                  </ul>
-                </aside>
-                <section class="planner-insight">
-                  <p class="gift-label">Why this view matters</p>
-                  <p>The daily view makes the goal small enough to act on, while the family note turns an individual plan into a shared emotional touchpoint.</p>
+              <div class="planner-app-content" id="planner-screen-content">
+                <section class="planner-stat-grid">
+                  <article><span>Goals active</span><strong>06</strong></article>
+                  <article><span>Family notes</span><strong>14</strong></article>
+                  <article><span>Ready to print</span><strong>03</strong></article>
                 </section>
-                <section class="planner-preview">
-                  <p class="gift-label">Printable card</p>
-                  <div>
-                    <strong>Today I will...</strong>
-                    <span>Take one photo and write one memory.</span>
-                  </div>
+                <section class="planner-dashboard-grid">
+                  <article class="planner-feature-card large">
+                    <span>Today</span>
+                    <h3>30 min photo walk</h3>
+                    <p>Small action connected to the larger photography goal.</p>
+                    <div class="app-progress"><i style="width: 68%"></i></div>
+                  </article>
+                  <article class="planner-feature-card">
+                    <span>Family prompt</span>
+                    <h3>Upload one memory</h3>
+                    <p>Turns a personal task into a shared moment.</p>
+                  </article>
+                  <article class="planner-feature-card">
+                    <span>Upcoming</span>
+                    <h3>Monthly album review</h3>
+                    <p>Choose photos, add captions, and print the spread.</p>
+                  </article>
                 </section>
               </div>
             </div>
+          </div>
+
+          <div class="prototype-explanation" id="prototype-explanation">
+            <p class="gift-label">Current screen rationale</p>
+            <p>The dashboard gives the family one projector-friendly place to review today's plan, goal progress, family prompts, and printable next actions.</p>
           </div>
         </div>
       </section>
@@ -517,93 +514,101 @@
     </footer>
 
     <script>
-      const plannerData = {
-        daily: {
-          label: "Today",
-          title: "Make time for photography",
-          priority: "30 min photo walk",
-          note: "Upload one photo from today and tell us why you liked it.",
-          progress: "64%",
-          summary: "64% toward this month's family goals",
-          items: ["Camera practice", "Health check-in", "Trip memory album"],
-          checklist: ["Charge camera", "Pick walking route", "Print evening reflection"],
-          insight: "The daily view makes the goal small enough to act on, while the family note turns an individual plan into a shared emotional touchpoint.",
-          printTitle: "Today I will...",
-          printText: "Take one photo and write one memory."
+      const plannerScreens = {
+        dashboard: {
+          kicker: "Dashboard",
+          title: "Good evening, ready to review today's goals?",
+          rationale: "The dashboard gives the family one projector-friendly place to review today's plan, goal progress, family prompts, and printable next actions.",
+          html: `
+            <section class="planner-stat-grid">
+              <article><span>Goals active</span><strong>06</strong></article>
+              <article><span>Family notes</span><strong>14</strong></article>
+              <article><span>Ready to print</span><strong>03</strong></article>
+            </section>
+            <section class="planner-dashboard-grid">
+              <article class="planner-feature-card large">
+                <span>Today</span>
+                <h3>30 min photo walk</h3>
+                <p>Small action connected to the larger photography goal.</p>
+                <div class="app-progress"><i style="width: 68%"></i></div>
+              </article>
+              <article class="planner-feature-card">
+                <span>Family prompt</span>
+                <h3>Upload one memory</h3>
+                <p>Turns a personal task into a shared moment.</p>
+              </article>
+              <article class="planner-feature-card">
+                <span>Upcoming</span>
+                <h3>Monthly album review</h3>
+                <p>Choose photos, add captions, and print the spread.</p>
+              </article>
+            </section>`
         },
-        monthly: {
-          label: "This month",
-          title: "Plan the family memory album",
-          priority: "Choose 12 getaway photos",
-          note: "Family members can add captions before printing the album pages.",
-          progress: "48%",
-          summary: "48% toward this quarter's shared milestones",
-          items: ["Select photos", "Write captions", "Print album pages"],
-          checklist: ["Collect family photos", "Shortlist favorites", "Review captions"],
-          insight: "The monthly view keeps momentum visible without making the recipient manage every detail alone.",
-          printTitle: "This month we will...",
-          printText: "Build one memory spread for the family album."
+        planner: {
+          kicker: "Planner",
+          title: "Choose a planning template and make it tangible.",
+          rationale: "This screen shows the hybrid behavior: digital entry for collaboration, structured prompts for clarity, and print-ready outputs for documentation.",
+          html: `
+            <section class="template-grid">
+              <article class="template-card selected"><span>Daily</span><strong>Photo walk</strong><p>One action, one note, one memory.</p></article>
+              <article class="template-card"><span>Monthly</span><strong>Memory album</strong><p>Collect, caption, review, print.</p></article>
+              <article class="template-card"><span>Yearly</span><strong>Achievement wall</strong><p>Milestones tracked over time.</p></article>
+            </section>
+            <section class="planner-form-screen">
+              <label>Priority<input value="Take one evening photo walk" /></label>
+              <label>Family note<textarea>Upload one photo and write why this memory matters.</textarea></label>
+              <div class="planner-checklist"><span class="checked">Charge camera</span><span class="checked">Pick route</span><span>Print reflection card</span></div>
+            </section>`
         },
-        yearly: {
-          label: "This year",
-          title: "Build the wall of achievements",
-          priority: "Add one milestone card every month",
-          note: "Use the projector during family planning nights to review goals together.",
-          progress: "32%",
-          summary: "32% toward the yearly achievement wall",
-          items: ["Photography habit", "Family trip", "Health routine"],
-          checklist: ["Pick annual goals", "Assign family supporters", "Schedule review nights"],
-          insight: "The yearly view connects planning to pride by showing how small rituals become visible accomplishments.",
-          printTitle: "This year I want to...",
-          printText: "Fill the achievement wall with completed milestones."
+        goals: {
+          kicker: "Family goals",
+          title: "Make progress visible across the family.",
+          rationale: "The goals screen makes accountability softer: family members can support, comment, and celebrate without turning the gift into a productivity tool.",
+          html: `
+            <section class="goal-board">
+              <article><span>Photography habit</span><div class="app-progress"><i style="width: 72%"></i></div><p>Supported by weekly prompts.</p></article>
+              <article><span>Health routine</span><div class="app-progress"><i style="width: 46%"></i></div><p>Tracked gently, not competitively.</p></article>
+              <article><span>Family trip album</span><div class="app-progress"><i style="width: 58%"></i></div><p>Shared memories become visible output.</p></article>
+            </section>`
+        },
+        album: {
+          kicker: "Memory album",
+          title: "Collect memories from goals and family moments.",
+          rationale: "The album screen connects the camera and the trip back to the planner, so the system produces memories rather than only tasks.",
+          html: `
+            <section class="album-grid">
+              <article><span></span><strong>Trip photo</strong><p>Caption pending</p></article>
+              <article><span></span><strong>Photo walk</strong><p>Ready to print</p></article>
+              <article><span></span><strong>Family dinner</strong><p>Needs note</p></article>
+              <article><span></span><strong>Achievement card</strong><p>Added to wall</p></article>
+            </section>`
+        },
+        print: {
+          kicker: "Print center",
+          title: "Turn digital plans into physical documentation.",
+          rationale: "The print center is essential to the recipient need: the digital system remains useful because it can become a tangible planner page, card, or wall artifact.",
+          html: `
+            <section class="print-layout">
+              <article class="print-preview"><strong>Today I will...</strong><p>Take one photo and write one memory.</p><small>Signature / Date</small></article>
+              <article class="print-options"><h3>Export options</h3><button type="button">Daily card</button><button type="button">Monthly spread</button><button type="button">Achievement wall card</button></article>
+            </section>`
         }
       };
 
-      const tabs = document.querySelectorAll("[data-plan]");
-      const content = document.querySelector(".planner-content");
+      const screenButtons = document.querySelectorAll("[data-screen]");
+      const screenContent = document.querySelector("#planner-screen-content");
+      const screenKicker = document.querySelector("#screen-kicker");
+      const screenTitle = document.querySelector("#screen-title");
+      const explanation = document.querySelector("#prototype-explanation p:last-child");
 
-      tabs.forEach((tab) => {
-        tab.addEventListener("click", () => {
-          const view = plannerData[tab.dataset.plan];
-          tabs.forEach((item) => {
-            item.classList.toggle("active", item === tab);
-            item.setAttribute("aria-selected", item === tab ? "true" : "false");
-          });
-          content.dataset.view = tab.dataset.plan;
-          content.innerHTML = `
-            <div class="planner-main">
-              <p class="gift-label">${view.label}</p>
-              <h3>${view.title}</h3>
-              <label>
-                Priority
-                <input value="${view.priority}" />
-              </label>
-              <label>
-                Family note
-                <textarea>${view.note}</textarea>
-              </label>
-              <div class="planner-checklist" aria-label="${view.label} checklist">
-                ${view.checklist.map((item, index) => `<span class="${index < 2 ? "checked" : ""}">${item}</span>`).join("")}
-              </div>
-            </div>
-            <aside class="planner-side">
-              <p class="gift-label">Goal progress</p>
-              <div class="progress-track"><span style="width: ${view.progress}"></span></div>
-              <strong>${view.summary}</strong>
-              <ul>${view.items.map((item) => `<li>${item}</li>`).join("")}</ul>
-            </aside>
-            <section class="planner-insight">
-              <p class="gift-label">Why this view matters</p>
-              <p>${view.insight}</p>
-            </section>
-            <section class="planner-preview">
-              <p class="gift-label">Printable card</p>
-              <div>
-                <strong>${view.printTitle}</strong>
-                <span>${view.printText}</span>
-              </div>
-            </section>
-          `;
+      screenButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const screen = plannerScreens[button.dataset.screen];
+          screenButtons.forEach((item) => item.classList.toggle("active", item === button));
+          screenKicker.textContent = screen.kicker;
+          screenTitle.textContent = screen.title;
+          screenContent.innerHTML = screen.html;
+          explanation.textContent = screen.rationale;
         });
       });
     </script>
