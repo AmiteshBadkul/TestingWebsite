@@ -24,57 +24,59 @@
 
     <main id="main">
       <section class="hero-section" id="top">
-        <div class="section-inner hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Connexions Data Inc. | NDA-safe portfolio case study</p>
-            <h1>Designing clearer enterprise workflows across ERP onboarding and accessible service support.</h1>
-            <p class="hero-lede">
-              Two work-in-progress enterprise UX initiatives focused on the same product challenge:
-              helping users complete complex business tasks with less confusion, stronger guidance,
-              and more accessible interaction patterns.
-            </p>
-            <div class="hero-actions" aria-label="Project outcomes">
-              <a href="#erp">View ERP project</a>
-              <a href="#accessibility">View accessibility project</a>
+        <div class="section-inner dark-hero-grid">
+          <div class="dark-hero-copy">
+            <div class="hero-tags" aria-label="Project categories">
+              <span>UX</span>
+              <span>Enterprise</span>
+            </div>
+            <p class="hero-subcontext">SAP/ERP transformation · Accessibility · Service workflows</p>
+            <h1>CONNEXIONS ENTERPRISE UX</h1>
+            <p class="hero-duration">Work in progress · 2026</p>
+
+            <div class="hero-role-grid">
+              <article>
+                <span>Team overview</span>
+                <p>UI/UX Designer (me)<br />Product Manager<br />Software Engineers<br />Support & Operations<br />Accessibility Reviewers</p>
+              </article>
+              <article>
+                <span>My role</span>
+                <p>Information synthesis · Journey mapping · Stakeholder alignment · Ideation · Wireframing & prototyping · Visual design</p>
+              </article>
             </div>
           </div>
 
-          <div class="case-snapshot" aria-label="Case study snapshot">
-            <div class="snapshot-top">
-              <span>Portfolio Snapshot</span>
-              <strong>Enterprise UX at Connexions</strong>
+          <div class="dark-hero-visual" aria-label="Recreated NDA-safe project visuals">
+            <p>Figma → Enterprise prototype</p>
+            <div class="hero-card-stack">
+              <article class="hero-ui-card back-card">
+                <span>ERP readiness</span>
+                <strong>72%</strong>
+                <i></i>
+              </article>
+              <article class="hero-ui-card front-card">
+                <span>Service portal</span>
+                <strong>AA</strong>
+                <i></i>
+                <i></i>
+              </article>
             </div>
-            <dl class="snapshot-grid">
-              <div>
-                <dt>Role</dt>
-                <dd>UI/UX Designer</dd>
-              </div>
-              <div>
-                <dt>Company domain</dt>
-                <dd>SAP, ERP, digital transformation</dd>
-              </div>
-              <div>
-                <dt>Project 01</dt>
-                <dd>ERP onboarding, 30% lower abandonment</dd>
-              </div>
-              <div>
-                <dt>Project 02</dt>
-                <dd>WCAG 2.1 AA portal, 20% higher engagement</dd>
-              </div>
-              <div>
-                <dt>Status</dt>
-                <dd>Work in progress, NDA-safe recreations</dd>
-              </div>
-              <div>
-                <dt>Methods</dt>
-                <dd>Journey mapping, audits, iterations, stakeholder alignment</dd>
-              </div>
-            </dl>
+            <div class="hero-impact-overlay">
+              <strong>30%</strong>
+              <span>Lower onboarding abandonment</span>
+            </div>
+            <div class="hero-demo-count">
+              <span>WCAG checks</span>
+              <strong>08+</strong>
+            </div>
           </div>
+        </div>
+        <div class="hero-nda-strip">
+          The visual assets are recreated under NDA. Explore the process, key challenges, and how I navigated ERP onboarding and accessibility work at Connexions Data Inc.
         </div>
       </section>
 
-      <section class="impact-hero" aria-label="Impact overview">
+      <section class="impact-hero" id="impact" aria-label="Impact overview">
         <div class="section-inner">
           <p class="impact-kicker">Impact overview</p>
           <h2>Improving enterprise usability through structured research, iteration, and accessibility-first design.</h2>
@@ -458,6 +460,43 @@
             </article>
           </div>
 
+          <div class="prototype-flow" aria-label="ERP working prototype flow">
+            <div class="artifact-title">
+              <p class="eyebrow">Working prototype flow</p>
+              <h3>Clickable-style ERP prototype screens under the selected solution.</h3>
+            </div>
+            <div class="prototype-flow-grid">
+              <article class="prototype-phone">
+                <span>01 · Welcome</span>
+                <h4>Start ERP setup</h4>
+                <p>Clear expectation-setting before users enter business details.</p>
+                <button type="button">Start setup</button>
+              </article>
+              <article class="prototype-phone">
+                <span>02 · Role</span>
+                <h4>Choose role path</h4>
+                <div class="choice-list">
+                  <button type="button">Finance Admin</button>
+                  <button type="button" class="ghost-button">Operations User</button>
+                </div>
+              </article>
+              <article class="prototype-phone">
+                <span>03 · Checklist</span>
+                <h4>Data readiness</h4>
+                <div class="review-list">
+                  <span>Company profile complete</span>
+                  <span>Tax region validated</span>
+                  <span>Permissions pending</span>
+                </div>
+              </article>
+              <article class="prototype-phone">
+                <span>04 · Success</span>
+                <h4>Ready for dashboard</h4>
+                <p class="success-note">Setup submitted with 3 verified requirements.</p>
+              </article>
+            </div>
+          </div>
+
           <div class="interaction-gallery" aria-label="ERP interaction and impact screens">
             <article class="interaction-screen">
               <span class="card-label">Interaction change</span>
@@ -770,6 +809,48 @@
                 <li>Support actions</li>
               </ol>
             </article>
+          </div>
+
+          <div class="prototype-flow" aria-label="Accessible service portal working prototype flow">
+            <div class="artifact-title">
+              <p class="eyebrow">Working prototype flow</p>
+              <h3>Clickable-style service portal screens showing the accessible task path.</h3>
+            </div>
+            <div class="prototype-flow-grid portal-flow">
+              <article class="prototype-phone">
+                <span>01 · Home</span>
+                <h4>Find service tasks</h4>
+                <div class="portal-nav-demo">
+                  <span class="active-nav">Requests</span>
+                  <span>Knowledge base</span>
+                </div>
+              </article>
+              <article class="prototype-phone">
+                <span>02 · Form</span>
+                <h4>Submit request</h4>
+                <label>
+                  Business reason
+                  <input value="Finance reporting access" aria-label="Prototype business reason" />
+                </label>
+                <p class="error-note">Business unit is required.</p>
+              </article>
+              <article class="prototype-phone">
+                <span>03 · Focus</span>
+                <h4>Keyboard path</h4>
+                <div class="focus-path">
+                  <button type="button">New request</button>
+                  <button type="button" class="focus-button">Case card</button>
+                </div>
+              </article>
+              <article class="prototype-phone">
+                <span>04 · Status</span>
+                <h4>Track resolution</h4>
+                <div class="ticket-card">
+                  <span class="status-chip blue">Review needed</span>
+                  <strong>Access request pending</strong>
+                </div>
+              </article>
+            </div>
           </div>
 
           <div class="interaction-gallery" aria-label="Accessibility interaction and impact screens">
