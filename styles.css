@@ -5770,7 +5770,7 @@ th {
 .erp-wireframe-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 24px;
   margin-top: 40px;
 }
 
@@ -5778,7 +5778,7 @@ th {
   background: #ffffff;
   border: 1px solid var(--line);
   border-radius: 12px;
-  padding: 28px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   box-shadow: var(--shadow);
@@ -5792,12 +5792,40 @@ th {
 
 .wireframe-badge {
   align-self: flex-start;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 800;
-  color: var(--teal);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 16px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  line-height: 1;
+}
+
+.wireframe-badge.before {
+  color: #b91c1c;
+  background: #fee2e2;
+}
+
+.wireframe-badge.discarded {
+  color: #475569;
+  background: #f1f5f9;
+}
+
+.wireframe-badge.chosen {
+  color: #065f46;
+  background: #d1fae5;
+  border: 1px solid #a7f3d0;
+}
+
+.wireframe-badge.step {
+  color: #0369a1;
+  background: #e0f2fe;
+}
+
+.wireframe-badge.final {
+  color: #6d28d9;
+  background: #f3e8ff;
 }
 
 .wireframe-browser-frame {
@@ -5805,7 +5833,7 @@ th {
   border-radius: 8px;
   overflow: hidden;
   background: #f8fafc;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
@@ -5828,9 +5856,9 @@ th {
 }
 
 .wireframe-image-wrapper {
-  padding: 16px;
+  padding: 8px;
   background: #f8fafc;
-  height: 180px;
+  height: 110px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5846,16 +5874,16 @@ th {
 }
 
 .erp-wireframe-card h3 {
-  font-size: 1.15rem;
-  margin-bottom: 10px;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
   color: var(--ink);
   font-weight: 700;
 }
 
 .erp-wireframe-card p {
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   color: var(--muted);
-  line-height: 1.5;
+  line-height: 1.45;
   margin: 0;
 }
 

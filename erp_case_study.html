@@ -312,88 +312,160 @@
         </div>
 
         <div class="erp-wireframe-grid">
+          <!-- Card 1: Legacy Flow (Before Redesign) -->
           <article class="erp-wireframe-card">
-            <span class="wireframe-badge">Wireframe Step 01</span>
+            <span class="wireframe-badge before">Before Redesign</span>
+            <div class="wireframe-browser-frame">
+              <div class="wireframe-browser-bar"><i></i><i></i><i></i></div>
+              <div class="wireframe-image-wrapper">
+                <img src="assets/erp/wireframe_9.png" alt="Legacy Dashboard-First Flow" />
+              </div>
+            </div>
+            <h3>Legacy Dashboard</h3>
+            <p><strong>Constraint:</strong> Dropped users straight into the complete, unconfigured dashboard. Under usability testing, 60% of first-time users failed to locate their first assigned task.</p>
+          </article>
+
+          <!-- Card 2: Concept Iteration V1 -->
+          <article class="erp-wireframe-card">
+            <span class="wireframe-badge discarded">Discarded Concept A</span>
+            <div class="wireframe-browser-frame">
+              <div class="wireframe-browser-bar"><i></i><i></i><i></i></div>
+              <div class="wireframe-image-wrapper">
+                <img src="assets/erp/wireframe_9.png" alt="Concept A: Full Guided Tour" />
+              </div>
+            </div>
+            <h3>Full Guided Tour</h3>
+            <p><strong>Constraint:</strong> Usability testing showed that users did not want to passively watch or learn the whole ERP before performing real tasks. It increased cognitive load.</p>
+          </article>
+
+          <!-- Card 3: Concept Iteration V2 -->
+          <article class="erp-wireframe-card">
+            <span class="wireframe-badge discarded">Discarded Concept B</span>
+            <div class="wireframe-browser-frame">
+              <div class="wireframe-browser-bar"><i></i><i></i><i></i></div>
+              <div class="wireframe-image-wrapper">
+                <img src="assets/erp/wireframe_1.png" alt="Concept B: Linear Wizard Only" />
+              </div>
+            </div>
+            <h3>Linear Wizard Only</h3>
+            <p><strong>Constraint:</strong> Progress was visible, but users couldn't anticipate the end or see what was missing before final form submission, causing user hesitation.</p>
+          </article>
+
+          <!-- Card 4: Redesign Concept V3 -->
+          <article class="erp-wireframe-card">
+            <span class="wireframe-badge chosen">Chosen Direction</span>
+            <div class="wireframe-browser-frame">
+              <div class="wireframe-browser-bar"><i></i><i></i><i></i></div>
+              <div class="wireframe-image-wrapper">
+                <img src="assets/erp/wireframe_1.png" alt="Chosen V3: Guided Setup + Review" />
+              </div>
+            </div>
+            <h3>Guided Setup + Review</h3>
+            <p><strong>Why it won:</strong> Preserved required business logic while adding progress, inline validation, and a persistent readiness checklist for high reassurance.</p>
+          </article>
+
+          <!-- Card 5: Step 1: Welcome Screen -->
+          <article class="erp-wireframe-card">
+            <span class="wireframe-badge step">Wireframe Step 01</span>
             <div class="wireframe-browser-frame">
               <div class="wireframe-browser-bar"><i></i><i></i><i></i></div>
               <div class="wireframe-image-wrapper">
                 <img src="assets/erp/wireframe_2.png" alt="Step 1: Welcome Screen" />
               </div>
             </div>
-            <h3>1. Welcome & Orientation</h3>
-            <p>Instead of dropping the user into a dense dashboard, the welcome screen offers clear guidance, explains the purpose of the onboarding, and directs them to the first logical step.</p>
+            <h3>Welcome & Orientation</h3>
+            <p><strong>Why it won:</strong> Welcomes users and sets context, explaining what onboarding accomplishes and directing them to a clear starting path.</p>
           </article>
 
+          <!-- Card 6: Step 2: Role Confirmation -->
           <article class="erp-wireframe-card">
-            <span class="wireframe-badge">Wireframe Step 02</span>
+            <span class="wireframe-badge step">Wireframe Step 02</span>
             <div class="wireframe-browser-frame">
               <div class="wireframe-browser-bar"><i></i><i></i><i></i></div>
               <div class="wireframe-image-wrapper">
                 <img src="assets/erp/wireframe_3.png" alt="Step 2: Role Confirmation" />
               </div>
             </div>
-            <h3>2. Role Confirmation</h3>
-            <p>Confirming the user's role (e.g., Operations Associate) ensures that only relevant modules and tasks are surfaced, preventing cognitive overload and irrelevant navigation choices.</p>
+            <h3>Role Confirmation</h3>
+            <p><strong>Why it won:</strong> Validates the user's role and scopes the upcoming task list, ensuring they only see fields and modules relevant to them.</p>
           </article>
 
+          <!-- Card 7: Step 3: Task Introduction -->
           <article class="erp-wireframe-card">
-            <span class="wireframe-badge">Wireframe Step 03</span>
+            <span class="wireframe-badge step">Wireframe Step 03</span>
             <div class="wireframe-browser-frame">
               <div class="wireframe-browser-bar"><i></i><i></i><i></i></div>
               <div class="wireframe-image-wrapper">
                 <img src="assets/erp/wireframe_4.png" alt="Step 3: Task Introduction" />
               </div>
             </div>
-            <h3>3. Task Introduction</h3>
-            <p>Before launching into the form, a transitional intro details exactly what the user is about to do and why it matters, ensuring they feel prepared and in control.</p>
+            <h3>Task Introduction</h3>
+            <p><strong>Why it won:</strong> Prepares the user before launching the task form, showing what inputs are required to minimize entry anxiety.</p>
           </article>
 
+          <!-- Card 8: Step 4: First Assigned Task -->
           <article class="erp-wireframe-card">
-            <span class="wireframe-badge">Wireframe Step 04</span>
+            <span class="wireframe-badge step">Wireframe Step 04</span>
             <div class="wireframe-browser-frame">
               <div class="wireframe-browser-bar"><i></i><i></i><i></i></div>
               <div class="wireframe-image-wrapper">
                 <img src="assets/erp/wireframe_5.png" alt="Step 4: First Assigned Task" />
               </div>
             </div>
-            <h3>4. First Assigned Task</h3>
-            <p>The user is guided to fill out their first business task (e.g. creating a purchase requisition) with inline contextual tooltips explaining complex terms like GL Code and Cost Center.</p>
+            <h3>Guided Form Entry</h3>
+            <p><strong>Why it won:</strong> Surfaced the actual form with inline contextual explanations for GL Code, BU, and Cost Center to prevent errors.</p>
           </article>
 
+          <!-- Card 9: Step 5: Verify & Review -->
           <article class="erp-wireframe-card">
-            <span class="wireframe-badge">Wireframe Step 05</span>
+            <span class="wireframe-badge step">Wireframe Step 05</span>
             <div class="wireframe-browser-frame">
               <div class="wireframe-browser-bar"><i></i><i></i><i></i></div>
               <div class="wireframe-image-wrapper">
                 <img src="assets/erp/wireframe_6.png" alt="Step 5: Verify & Review" />
               </div>
             </div>
-            <h3>5. Verify & Review</h3>
-            <p>Before committing data, a comprehensive review screen highlights what will be submitted. This directly addresses the users' fear of making a costly database mistake.</p>
+            <h3>Review & Verification</h3>
+            <p><strong>Why it won:</strong> Summarizes entries prior to submission, letting users review fields to address fear of database entry errors.</p>
           </article>
 
+          <!-- Card 10: Step 6: Success Confirmation -->
           <article class="erp-wireframe-card">
-            <span class="wireframe-badge">Wireframe Step 06</span>
+            <span class="wireframe-badge step">Wireframe Step 06</span>
             <div class="wireframe-browser-frame">
               <div class="wireframe-browser-bar"><i></i><i></i><i></i></div>
               <div class="wireframe-image-wrapper">
                 <img src="assets/erp/wireframe_7.png" alt="Step 6: Success Confirmation" />
               </div>
             </div>
-            <h3>6. Success Confirmation</h3>
-            <p>Confirming that the task was successfully received by the database validates the user's effort and gives them clear instructions on what to expect next.</p>
+            <h3>Success Confirmation</h3>
+            <p><strong>Why it won:</strong> Validates database acceptance and outlines post-submission next steps, establishing closure and confidence.</p>
           </article>
 
+          <!-- Card 11: Step 7: Active Dashboard -->
           <article class="erp-wireframe-card">
-            <span class="wireframe-badge">Wireframe Step 07</span>
+            <span class="wireframe-badge step">Wireframe Step 07</span>
             <div class="wireframe-browser-frame">
               <div class="wireframe-browser-bar"><i></i><i></i><i></i></div>
               <div class="wireframe-image-wrapper">
                 <img src="assets/erp/wireframe_8.png" alt="Step 7: Active Dashboard" />
               </div>
             </div>
-            <h3>7. Active Dashboard</h3>
-            <p>After successfully completing their first task, the user is transitioned to the main ERP dashboard. The workspace is now fully configured and prioritizes their role's key modules.</p>
+            <h3>Unlocked Workspace</h3>
+            <p><strong>Why it won:</strong> Discloses full dashboard privileges only after the first successful setup task, ensuring users have baseline tool familiarity.</p>
+          </article>
+
+          <!-- Card 12: High-Fidelity Redesign Preview -->
+          <article class="erp-wireframe-card">
+            <span class="wireframe-badge final">Final Portal Redesign</span>
+            <div class="wireframe-browser-frame">
+              <div class="wireframe-browser-bar"><i></i><i></i><i></i></div>
+              <div class="wireframe-image-wrapper">
+                <img src="assets/erp/wireframe_10.png" alt="Widescreen high-fidelity redesign preview" />
+              </div>
+            </div>
+            <h3>High-Fidelity Preview</h3>
+            <p><strong>Why it won:</strong> Integrates custom color palettes, modern typography, and responsive layouts to match high-fidelity enterprise standards.</p>
           </article>
         </div>
       </div>
