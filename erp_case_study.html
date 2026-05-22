@@ -13,7 +13,7 @@
     <!-- Hero Section -->
     <section class="erp-hero" id="top">
       <div class="section-inner">
-        <a href="index.html" class="erp-back-link" aria-label="Back to main portfolio">
+        <a href="https://disharathod.framer.website" class="erp-back-link" aria-label="Back to main portfolio">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align: middle; margin-right: 4px;"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
           Back to Portfolio
         </a>
@@ -261,14 +261,53 @@
       </div>
     </section>
 
-    <!-- Interactive Walkthrough -->
+    <!-- Interactive Figma Prototypes -->
+    <section class="process-section erp-figma-section" id="figma-prototypes">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="eyebrow">Interactive Prototypes</p>
+          <h2>Experience the live clickable prototypes</h2>
+          <p>
+            Compare the interactive flows directly in Figma to experience the difference between the legacy dashboard and the guided onboarding redesign.
+          </p>
+        </div>
+
+        <div class="erp-figma-grid">
+          <div class="erp-figma-card legacy">
+            <span class="figma-badge legacy">Legacy Flow</span>
+            <h3>Before: Dashboard-First</h3>
+            <p>
+              Navigate the initial complex layout, multi-level sidebar menu, and dense system dashboard where new hires had to guess their next step.
+            </p>
+            <a href="https://stand-salty-43183759.figma.site" target="_blank" rel="noopener" class="erp-figma-btn secondary">
+              <span>View Legacy Prototype</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left:6px;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+
+          <div class="erp-figma-card redesigned">
+            <span class="figma-badge redesigned">Redesigned Flow</span>
+            <h3>After: Guided Onboarding</h3>
+            <p>
+              Experience the streamlined, task-first flow with role confirmation, inline term explanations, validation checkpoints, and clear success messaging.
+            </p>
+            <a href="https://nougat-bony-17698477.figma.site" target="_blank" rel="noopener" class="erp-figma-btn primary">
+              <span>View Guided Prototype</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left:6px;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wireframe Walkthrough -->
     <section class="cp-walkthrough erp-walkthrough" id="walkthrough">
       <div class="cp-container">
         <div class="cp-section-heading light">
-          <p class="cp-eyebrow">Interactive Prototype Flow</p>
-          <h2>Click through the redesigned onboarding steps.</h2>
+          <p class="cp-eyebrow">Redesigned Wireframes</p>
+          <h2>Onboarding Wireframe Walkthrough</h2>
           <p>
-            Experience the step-by-step onboarding journey that guides new Operations Associates from first login to successful task completion.
+            Browse through the step-by-step wireframe screens that outline the guided onboarding path from first login to successful task completion.
           </p>
         </div>
 
@@ -293,7 +332,7 @@
             </aside>
             <div class="cp-prototype-screen erp-prototype-screen">
               <div class="erp-screen-top">
-                <span id="erp-screen-kicker">Onboarding Step 1</span>
+                <span id="erp-screen-kicker">Wireframe Step 1: Welcome Screen</span>
                 <strong id="erp-screen-title">Reducing Initial Friction</strong>
               </div>
               <div class="erp-screen-content" id="erp-screen-content" aria-live="polite">
@@ -488,43 +527,43 @@
     // Configuration object mapping tabs to wireframe images, kickers, titles, and rationale copy.
     const erpScreens = {
       welcome: {
-        kicker: "Onboarding Step 1: Welcome Screen",
+        kicker: "Wireframe Step 1: Welcome Screen",
         title: "Reducing Initial Friction",
         image: "assets/erp/wireframe_2.png",
         rationale: "Instead of dropping the user into a dense dashboard, the welcome screen offers clear guidance, explains the purpose of the onboarding, and directs them to the first logical step."
       },
       rolesetup: {
-        kicker: "Onboarding Step 2: Role Confirmation",
+        kicker: "Wireframe Step 2: Role Confirmation",
         title: "Personalizing the Workflow",
         image: "assets/erp/wireframe_3.png",
         rationale: "Confirming the user's role (e.g., Operations Associate) ensures that only relevant modules and tasks are surfaced, preventing cognitive overload and irrelevant navigation choices."
       },
       taskintro: {
-        kicker: "Onboarding Step 3: Task Introduction",
+        kicker: "Wireframe Step 3: Task Introduction",
         title: "Providing Clear Direction",
         image: "assets/erp/wireframe_4.png",
         rationale: "Before launching into the form, a transitional intro details exactly what the user is about to do and why it matters, ensuring they feel prepared and in control."
       },
       firsttask: {
-        kicker: "Onboarding Step 4: First Assigned Task",
+        kicker: "Wireframe Step 4: First Assigned Task",
         title: "Guided Interaction",
         image: "assets/erp/wireframe_5.png",
         rationale: "The user is guided to fill out their first business task (e.g. creating a purchase requisition) with inline contextual tooltips explaining complex terms like GL Code and Cost Center."
       },
       review: {
-        kicker: "Onboarding Step 5: Verify & Review",
+        kicker: "Wireframe Step 5: Verify & Review",
         title: "Error Prevention & Reassurance",
         image: "assets/erp/wireframe_6.png",
         rationale: "Before committing data, a comprehensive review screen highlights what will be submitted. This directly addresses the users' fear of making a costly database mistake."
       },
       success: {
-        kicker: "Onboarding Step 6: Success Confirmation",
+        kicker: "Wireframe Step 6: Success Confirmation",
         title: "Building Confidence",
         image: "assets/erp/wireframe_7.png",
         rationale: "Confirming that the task was successfully received by the database validates the user's effort and gives them clear instructions on what to expect next."
       },
       dashboard: {
-        kicker: "Onboarding Step 7: Active Dashboard",
+        kicker: "Wireframe Step 7: Active Dashboard",
         title: "Entering the Workspace",
         image: "assets/erp/wireframe_8.png",
         rationale: "After successfully completing their first task, the user is transitioned to the main ERP dashboard. The workspace is now fully configured and prioritizes their role's key modules."

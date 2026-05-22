@@ -5656,12 +5656,122 @@ th {
   object-fit: cover;
 }
 
+
+
+/* Figma Prototypes Section */
+.erp-figma-section {
+  background: var(--soft);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.erp-figma-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.erp-figma-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.erp-figma-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.erp-figma-card.legacy {
+  border-top: 4px solid var(--red);
+}
+
+.erp-figma-card.redesigned {
+  border-top: 4px solid var(--teal);
+}
+
+.figma-badge {
+  align-self: flex-start;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+
+.figma-badge.legacy {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.figma-badge.redesigned {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.erp-figma-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: var(--ink);
+}
+
+.erp-figma-card p {
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 28px;
+  flex-grow: 1;
+}
+
+.erp-figma-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.erp-figma-btn.primary {
+  background: var(--teal);
+  color: #ffffff;
+  border: 1px solid var(--teal);
+}
+
+.erp-figma-btn.primary:hover {
+  background: var(--teal-dark);
+  border-color: var(--teal-dark);
+}
+
+.erp-figma-btn.secondary {
+  background: #ffffff;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.erp-figma-btn.secondary:hover {
+  background: #f8fafc;
+  border-color: var(--ink);
+}
+
 @media (max-width: 1100px) {
   .erp-hero-grid,
   .erp-timeline-grid,
   .erp-audit-grid,
   .erp-persona-grid,
-  .erp-comparison-grid {
+  .erp-comparison-grid,
+  .erp-figma-grid {
     grid-template-columns: 1fr;
     gap: 30px;
   }
