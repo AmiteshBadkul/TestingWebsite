@@ -540,40 +540,20 @@
           </article>
         </div>
 
-        <div class="planner-prototype-frame" aria-label="Interactive Crazy Planner prototype">
-          <aside class="planner-app-sidebar">
-            <div class="planner-app-logo">The Crazy Planner</div>
-            <button type="button" class="active" data-screen="welcome">Welcome</button>
-            <button type="button" data-screen="dashboard">Dashboard</button>
-            <button type="button" data-screen="daily">Daily plan</button>
-            <button type="button" data-screen="family">Family goals</button>
-            <button type="button" data-screen="wall">Achievement wall</button>
-            <button type="button" data-screen="print">Print center</button>
-            <button type="button" data-screen="projector">Projector mode</button>
-          </aside>
-
-          <div class="planner-app-screen">
-            <div class="planner-app-topbar">
-              <div>
-                <span id="screen-kicker">Gift entry</span>
-                <strong id="screen-title">Welcome to The Crazy Planner</strong>
-              </div>
-              <button type="button">Projector mode</button>
-            </div>
-            <div class="planner-app-content" id="planner-screen-content">
-              <section class="template-grid">
-                <article class="template-card selected"><span>Private family space</span><strong>Access code</strong><p>Familyfirst2026 opens a secure, personal planner space.</p></article>
-                <article class="template-card"><span>Personal note</span><strong>Hey Bhupesh!</strong><p>The experience begins like a gift, not a task manager.</p></article>
-                <article class="template-card"><span>First action</span><strong>Start planning</strong><p>A simple CTA moves the recipient from reveal to usefulness.</p></article>
-              </section>
-            </div>
-          </div>
-        </div>
-
-        <div class="prototype-explanation" id="prototype-explanation">
-          <p class="gift-label">Current screen rationale</p>
-          <p>The welcome flow creates a private, emotional entry point before asking the recipient to do planning work.</p>
-        </div>
+        <article class="gift-prototype-link-card">
+          <span class="gift-prototype-badge">Interactive prototype</span>
+          <h3>Open the live Crazy Planner prototype</h3>
+          <p>
+            View the full prototype flow with the welcome screen, dashboard, daily plan,
+            family goals, achievement wall, print center, and projector mode.
+          </p>
+          <a
+            class="gift-prototype-button"
+            href="https://pine-grub-75716835.figma.site"
+            target="_blank"
+            rel="noopener noreferrer"
+          >View Live Prototype ↗</a>
+        </article>
       </div>
     </section>
 
@@ -656,122 +636,6 @@
     </div>
   </footer>
 
-  <script>
-    const plannerScreens = {
-      welcome: {
-        kicker: "Gift entry",
-        title: "Welcome to The Crazy Planner",
-        rationale: "The welcome flow creates a private, emotional entry point before asking the recipient to do planning work.",
-        html: `
-            <section class="template-grid">
-              <article class="template-card selected"><span>Private family space</span><strong>Access code</strong><p>Familyfirst2026 opens a secure, personal planner space.</p></article>
-              <article class="template-card"><span>Personal note</span><strong>Hey Bhupesh!</strong><p>The experience begins like a gift, not a task manager.</p></article>
-              <article class="template-card"><span>First action</span><strong>Start planning</strong><p>A simple CTA moves the recipient from reveal to usefulness.</p></article>
-            </section>`
-      },
-      dashboard: {
-        kicker: "Dashboard",
-        title: "Good morning, Bhupesh",
-        rationale: "The dashboard gives a calm overview of today's priorities, active goals, family messages, and physical bridge actions like Print Today and Projector View.",
-        html: `
-            <section class="planner-stat-grid">
-              <article><span>Today's plan</span><strong>04</strong></article>
-              <article><span>Goal progress</span><strong>70%</strong></article>
-              <article><span>Ready to print</span><strong>03</strong></article>
-            </section>
-            <section class="planner-dashboard-grid">
-              <article class="planner-feature-card large">
-                <span>Today's priorities</span>
-                <h3>Shift-aware plan</h3>
-                <p>Review shift schedule, call family, take a 30-minute walk, and review financial documents.</p>
-                <div class="app-progress"><i style="width: 70%"></i></div>
-              </article>
-              <article class="planner-feature-card">
-                <span>Family message</span>
-                <h3>Take a break today</h3>
-                <p>Encouragement appears inside the planner without becoming surveillance.</p>
-              </article>
-              <article class="planner-feature-card">
-                <span>Current focus</span>
-                <h3>Retirement Fund</h3>
-                <p>Long-term goals stay visible and connected to family support.</p>
-              </article>
-            </section>`
-      },
-      daily: {
-        kicker: "Daily plan",
-        title: "Flexible planning for shift routines.",
-        rationale: "The daily plan avoids a rigid 9-to-5 structure. It organizes the day around before shift, during shift, after shift, rest, and health.",
-        html: `
-            <section class="planner-form-screen">
-              <label>Before shift<input value="Healthy breakfast, walk, review finances" /></label>
-              <label>During shift<textarea>Team sync, inspection rounds, dinner break, water goal.</textarea></label>
-              <div class="planner-checklist"><span class="checked">Take medicines</span><span>Limit screen time</span><span>Sleep by midnight</span></div>
-            </section>`
-      },
-      family: {
-        kicker: "Family goals",
-        title: "Make support collaborative, not pressuring.",
-        rationale: "Family goals create shared visibility while letting each person keep their own goals. The tone is encouragement, not monitoring.",
-        html: `
-            <section class="goal-board">
-              <article><span>Shared goal</span><strong>European Vacation 2027</strong><div class="app-progress"><i style="width: 45%"></i></div><p>Saving for a family trip.</p></article>
-              <article><span>Bhupesh</span><strong>Health routine</strong><p>Walk 5km, maintain diet, grow retirement fund.</p></article>
-              <article><span>Disha + Preeti</span><strong>Family support</strong><p>Visit home, organize albums, add encouragement notes.</p></article>
-            </section>`
-      },
-      wall: {
-        kicker: "Achievement wall",
-        title: "Turn progress into visible celebration.",
-        rationale: "The achievement wall transforms goals into proof of effort, family pride, and printable artifacts that can be revisited over time.",
-        html: `
-            <section class="album-grid">
-              <article><span></span><strong>First Job</strong><p>Career milestone documented.</p></article>
-              <article><span></span><strong>House Paid Off</strong><p>Family achievement card.</p></article>
-              <article><span></span><strong>Disha's Graduation</strong><p>Shared pride and memory.</p></article>
-              <article><span></span><strong>Next Milestone</strong><p>Retirement Fund.</p></article>
-            </section>`
-      },
-      print: {
-        kicker: "Print center",
-        title: "Turn digital plans into physical documentation.",
-        rationale: "The print center is essential to the recipient need: the digital system remains useful because it can become a tangible planner page, card, or wall artifact.",
-        html: `
-            <section class="print-layout">
-              <article class="print-preview"><strong>Daily Shift Plan</strong><p>Date, shift timing, top priorities, meals, health, notes, and reflection.</p><small>Print / Date / Display</small></article>
-              <article class="print-options"><h3>7-piece printable kit</h3><button type="button">Daily sheet</button><button type="button">Monthly calendar</button><button type="button">Achievement card</button><button type="button">Gift instruction card</button></article>
-            </section>`
-      },
-      projector: {
-        kicker: "Projector mode",
-        title: "Make the plan visible at home.",
-        rationale: "Projector mode supports the recipient's desire to see plans clearly and makes the planner useful as a calm family-facing display.",
-        html: `
-            <section class="planner-dashboard-grid">
-              <article class="planner-feature-card large"><span>Today's focus</span><h3>Review shift schedule</h3><p>Call Disha, relax, and rest.</p><div class="app-progress"><i style="width: 62%"></i></div></article>
-              <article class="planner-feature-card"><span>Family note</span><h3>Proud of you dad</h3><p>Let's plan a trip soon.</p></article>
-              <article class="planner-feature-card"><span>Upcoming milestone</span><h3>Retirement Fund</h3><p>Progress is large, readable, and shared.</p></article>
-            </section>`
-      }
-    };
-
-    const screenButtons = document.querySelectorAll("[data-screen]");
-    const screenContent = document.querySelector("#planner-screen-content");
-    const screenKicker = document.querySelector("#screen-kicker");
-    const screenTitle = document.querySelector("#screen-title");
-    const explanation = document.querySelector("#prototype-explanation p:last-child");
-
-    screenButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const screen = plannerScreens[button.dataset.screen];
-        screenButtons.forEach((item) => item.classList.toggle("active", item === button));
-        screenKicker.textContent = screen.kicker;
-        screenTitle.textContent = screen.title;
-        screenContent.innerHTML = screen.html;
-        explanation.textContent = screen.rationale;
-      });
-    });
-  </script>
 </body>
 
 </html>
