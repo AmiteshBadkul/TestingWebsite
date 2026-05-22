@@ -311,44 +311,90 @@
           </p>
         </div>
 
-        <div class="cp-walkthrough-shell">
-          <div class="cp-screen-tabs erp-screen-tabs" role="tablist" aria-label="ERP Onboarding screens">
-            <button type="button" class="active" data-erp-screen="welcome" role="tab" aria-selected="true">01. Welcome Screen</button>
-            <button type="button" data-erp-screen="rolesetup" role="tab" aria-selected="false">02. Role Confirmation</button>
-            <button type="button" data-erp-screen="taskintro" role="tab" aria-selected="false">03. Task Introduction</button>
-            <button type="button" data-erp-screen="firsttask" role="tab" aria-selected="false">04. First Assigned Task</button>
-            <button type="button" data-erp-screen="review" role="tab" aria-selected="false">05. Verify & Review</button>
-            <button type="button" data-erp-screen="success" role="tab" aria-selected="false">06. Success Confirmation</button>
-            <button type="button" data-erp-screen="dashboard" role="tab" aria-selected="false">07. Active Dashboard</button>
-          </div>
-
-          <div class="cp-prototype-frame erp-prototype-frame">
-            <aside class="cp-prototype-nav erp-prototype-nav">
-              <strong>Connexions ERP</strong>
-              <span class="active">Onboarding</span>
-              <span>My Tasks</span>
-              <span>Department Assets</span>
-              <span>Support Portal</span>
-            </aside>
-            <div class="cp-prototype-screen erp-prototype-screen">
-              <div class="erp-screen-top">
-                <span id="erp-screen-kicker">Wireframe Step 1: Welcome Screen</span>
-                <strong id="erp-screen-title">Reducing Initial Friction</strong>
-              </div>
-              <div class="erp-screen-content" id="erp-screen-content" aria-live="polite">
-                <div class="erp-mockup-wrapper">
-                  <img id="erp-screen-img" src="assets/erp/wireframe_2.png" alt="Onboarding Welcome Screen" />
-                </div>
+        <div class="erp-wireframe-grid">
+          <article class="erp-wireframe-card">
+            <span class="wireframe-badge">Wireframe Step 01</span>
+            <div class="wireframe-browser-frame">
+              <div class="wireframe-browser-bar"><i></i><i></i><i></i></div>
+              <div class="wireframe-image-wrapper">
+                <img src="assets/erp/wireframe_2.png" alt="Step 1: Welcome Screen" />
               </div>
             </div>
-          </div>
+            <h3>1. Welcome & Orientation</h3>
+            <p>Instead of dropping the user into a dense dashboard, the welcome screen offers clear guidance, explains the purpose of the onboarding, and directs them to the first logical step.</p>
+          </article>
 
-          <aside class="cp-screen-rationale erp-screen-rationale" id="erp-screen-rationale">
-            <p class="cp-eyebrow">UX Rationale</p>
-            <p id="erp-screen-rationale-text">
-              Instead of dropping the user into a dense dashboard, the welcome screen offers clear guidance, explains the purpose of the onboarding, and directs them to the first logical step.
-            </p>
-          </aside>
+          <article class="erp-wireframe-card">
+            <span class="wireframe-badge">Wireframe Step 02</span>
+            <div class="wireframe-browser-frame">
+              <div class="wireframe-browser-bar"><i></i><i></i><i></i></div>
+              <div class="wireframe-image-wrapper">
+                <img src="assets/erp/wireframe_3.png" alt="Step 2: Role Confirmation" />
+              </div>
+            </div>
+            <h3>2. Role Confirmation</h3>
+            <p>Confirming the user's role (e.g., Operations Associate) ensures that only relevant modules and tasks are surfaced, preventing cognitive overload and irrelevant navigation choices.</p>
+          </article>
+
+          <article class="erp-wireframe-card">
+            <span class="wireframe-badge">Wireframe Step 03</span>
+            <div class="wireframe-browser-frame">
+              <div class="wireframe-browser-bar"><i></i><i></i><i></i></div>
+              <div class="wireframe-image-wrapper">
+                <img src="assets/erp/wireframe_4.png" alt="Step 3: Task Introduction" />
+              </div>
+            </div>
+            <h3>3. Task Introduction</h3>
+            <p>Before launching into the form, a transitional intro details exactly what the user is about to do and why it matters, ensuring they feel prepared and in control.</p>
+          </article>
+
+          <article class="erp-wireframe-card">
+            <span class="wireframe-badge">Wireframe Step 04</span>
+            <div class="wireframe-browser-frame">
+              <div class="wireframe-browser-bar"><i></i><i></i><i></i></div>
+              <div class="wireframe-image-wrapper">
+                <img src="assets/erp/wireframe_5.png" alt="Step 4: First Assigned Task" />
+              </div>
+            </div>
+            <h3>4. First Assigned Task</h3>
+            <p>The user is guided to fill out their first business task (e.g. creating a purchase requisition) with inline contextual tooltips explaining complex terms like GL Code and Cost Center.</p>
+          </article>
+
+          <article class="erp-wireframe-card">
+            <span class="wireframe-badge">Wireframe Step 05</span>
+            <div class="wireframe-browser-frame">
+              <div class="wireframe-browser-bar"><i></i><i></i><i></i></div>
+              <div class="wireframe-image-wrapper">
+                <img src="assets/erp/wireframe_6.png" alt="Step 5: Verify & Review" />
+              </div>
+            </div>
+            <h3>5. Verify & Review</h3>
+            <p>Before committing data, a comprehensive review screen highlights what will be submitted. This directly addresses the users' fear of making a costly database mistake.</p>
+          </article>
+
+          <article class="erp-wireframe-card">
+            <span class="wireframe-badge">Wireframe Step 06</span>
+            <div class="wireframe-browser-frame">
+              <div class="wireframe-browser-bar"><i></i><i></i><i></i></div>
+              <div class="wireframe-image-wrapper">
+                <img src="assets/erp/wireframe_7.png" alt="Step 6: Success Confirmation" />
+              </div>
+            </div>
+            <h3>6. Success Confirmation</h3>
+            <p>Confirming that the task was successfully received by the database validates the user's effort and gives them clear instructions on what to expect next.</p>
+          </article>
+
+          <article class="erp-wireframe-card">
+            <span class="wireframe-badge">Wireframe Step 07</span>
+            <div class="wireframe-browser-frame">
+              <div class="wireframe-browser-bar"><i></i><i></i><i></i></div>
+              <div class="wireframe-image-wrapper">
+                <img src="assets/erp/wireframe_8.png" alt="Step 7: Active Dashboard" />
+              </div>
+            </div>
+            <h3>7. Active Dashboard</h3>
+            <p>After successfully completing their first task, the user is transitioned to the main ERP dashboard. The workspace is now fully configured and prioritizes their role's key modules.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -523,77 +569,5 @@
     </div>
   </footer>
 
-  <script>
-    // Configuration object mapping tabs to wireframe images, kickers, titles, and rationale copy.
-    const erpScreens = {
-      welcome: {
-        kicker: "Wireframe Step 1: Welcome Screen",
-        title: "Reducing Initial Friction",
-        image: "assets/erp/wireframe_2.png",
-        rationale: "Instead of dropping the user into a dense dashboard, the welcome screen offers clear guidance, explains the purpose of the onboarding, and directs them to the first logical step."
-      },
-      rolesetup: {
-        kicker: "Wireframe Step 2: Role Confirmation",
-        title: "Personalizing the Workflow",
-        image: "assets/erp/wireframe_3.png",
-        rationale: "Confirming the user's role (e.g., Operations Associate) ensures that only relevant modules and tasks are surfaced, preventing cognitive overload and irrelevant navigation choices."
-      },
-      taskintro: {
-        kicker: "Wireframe Step 3: Task Introduction",
-        title: "Providing Clear Direction",
-        image: "assets/erp/wireframe_4.png",
-        rationale: "Before launching into the form, a transitional intro details exactly what the user is about to do and why it matters, ensuring they feel prepared and in control."
-      },
-      firsttask: {
-        kicker: "Wireframe Step 4: First Assigned Task",
-        title: "Guided Interaction",
-        image: "assets/erp/wireframe_5.png",
-        rationale: "The user is guided to fill out their first business task (e.g. creating a purchase requisition) with inline contextual tooltips explaining complex terms like GL Code and Cost Center."
-      },
-      review: {
-        kicker: "Wireframe Step 5: Verify & Review",
-        title: "Error Prevention & Reassurance",
-        image: "assets/erp/wireframe_6.png",
-        rationale: "Before committing data, a comprehensive review screen highlights what will be submitted. This directly addresses the users' fear of making a costly database mistake."
-      },
-      success: {
-        kicker: "Wireframe Step 6: Success Confirmation",
-        title: "Building Confidence",
-        image: "assets/erp/wireframe_7.png",
-        rationale: "Confirming that the task was successfully received by the database validates the user's effort and gives them clear instructions on what to expect next."
-      },
-      dashboard: {
-        kicker: "Wireframe Step 7: Active Dashboard",
-        title: "Entering the Workspace",
-        image: "assets/erp/wireframe_8.png",
-        rationale: "After successfully completing their first task, the user is transitioned to the main ERP dashboard. The workspace is now fully configured and prioritizes their role's key modules."
-      }
-    };
-
-    const erpButtons = document.querySelectorAll("[data-erp-screen]");
-    const erpKicker = document.querySelector("#erp-screen-kicker");
-    const erpTitle = document.querySelector("#erp-screen-title");
-    const erpImage = document.querySelector("#erp-screen-img");
-    const erpRationale = document.querySelector("#erp-screen-rationale-text");
-
-    erpButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const key = button.dataset.erpScreen;
-        const screen = erpScreens[key];
-        
-        erpButtons.forEach((btn) => {
-          const active = btn === button;
-          btn.classList.toggle("active", active);
-          btn.setAttribute("aria-selected", active ? "true" : "false");
-        });
-        
-        erpKicker.textContent = screen.kicker;
-        erpTitle.textContent = screen.title;
-        erpImage.src = screen.image;
-        erpImage.alt = screen.kicker;
-        erpRationale.textContent = screen.rationale;
-      });
-    });
-  </script>
 </body>
 </html>

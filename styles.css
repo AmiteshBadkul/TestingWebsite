@@ -5765,13 +5765,108 @@ th {
   border-color: var(--ink);
 }
 
+
+/* Wireframe Grid Styles */
+.erp-wireframe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.erp-wireframe-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.erp-wireframe-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.wireframe-badge {
+  align-self: flex-start;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--teal);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+
+.wireframe-browser-frame {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f8fafc;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.wireframe-browser-bar {
+  height: 20px;
+  background: #f1f5f9;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 8px;
+}
+
+.wireframe-browser-bar i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #cbd5e1;
+  display: inline-block;
+}
+
+.wireframe-image-wrapper {
+  padding: 16px;
+  background: #f8fafc;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wireframe-image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.erp-wireframe-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.erp-wireframe-card p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
 @media (max-width: 1100px) {
   .erp-hero-grid,
   .erp-timeline-grid,
   .erp-audit-grid,
   .erp-persona-grid,
   .erp-comparison-grid,
-  .erp-figma-grid {
+  .erp-figma-grid,
+  .erp-wireframe-grid {
     grid-template-columns: 1fr;
     gap: 30px;
   }
