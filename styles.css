@@ -3734,6 +3734,29 @@ th {
   align-items: center;
 }
 
+.gift-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gift-teal);
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.05rem;
+  margin-bottom: 36px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.gift-back-link:hover {
+  color: #0f766e;
+  transform: translateX(-2px);
+}
+
+.gift-back-link:focus-visible {
+  outline: 3px solid rgba(20, 184, 166, 0.28);
+  outline-offset: 6px;
+  border-radius: 8px;
+}
+
 .premium-hero-content {
   display: flex;
   flex-direction: column;
